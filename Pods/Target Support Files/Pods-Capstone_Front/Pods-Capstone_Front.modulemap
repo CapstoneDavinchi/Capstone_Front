@@ -1,0 +1,6 @@
+framework module Pods_Capstone_Front {
+  umbrella header "Pods-Capstone_Front-umbrella.h"
+
+  export *
+  module * { export * }
+}
