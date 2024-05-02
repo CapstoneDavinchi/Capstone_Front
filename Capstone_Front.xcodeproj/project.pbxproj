@@ -7,19 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0270D2F42BE0F36500B1B270 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0270D2F32BE0F36500B1B270 /* MainView.swift */; };
+		0270D2F62BE0F37A00B1B270 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0270D2F52BE0F37A00B1B270 /* MainViewModel.swift */; };
+		0270D2F82BE0F3B400B1B270 /* ViewModelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0270D2F72BE0F3B400B1B270 /* ViewModelable.swift */; };
+		0270D2FA2BE3F8A400B1B270 /* TabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0270D2F92BE3F8A400B1B270 /* TabBarViewModel.swift */; };
+		0270D2FC2BE3F9AB00B1B270 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0270D2FB2BE3F9AB00B1B270 /* TabBarView.swift */; };
+		0270D2FE2BE3FDB800B1B270 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0270D2FD2BE3FDB800B1B270 /* MenuView.swift */; };
 		02C3198E2BCE17600030D506 /* Capstone_FrontApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C3198D2BCE17600030D506 /* Capstone_FrontApp.swift */; };
 		02C319902BCE17600030D506 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C3198F2BCE17600030D506 /* ContentView.swift */; };
 		02C319922BCE17620030D506 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02C319912BCE17620030D506 /* Assets.xcassets */; };
 		02C319952BCE17620030D506 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02C319942BCE17620030D506 /* Preview Assets.xcassets */; };
+		02FFDCFE2BE40DFE002F0DEF /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FFDCFD2BE40DFE002F0DEF /* SearchView.swift */; };
+		02FFDD002BE41184002F0DEF /* CircleImageItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FFDCFF2BE41184002F0DEF /* CircleImageItem.swift */; };
+		02FFDD022BE411BB002F0DEF /* CategoryScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FFDD012BE411BB002F0DEF /* CategoryScrollView.swift */; };
+		02FFDD042BE4135B002F0DEF /* ArtWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FFDD032BE4135B002F0DEF /* ArtWork.swift */; };
+		02FFDD062BE413C9002F0DEF /* ArtWorksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FFDD052BE413C9002F0DEF /* ArtWorksViewModel.swift */; };
+		02FFDD082BE41420002F0DEF /* ArtWorkItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FFDD072BE41420002F0DEF /* ArtWorkItemView.swift */; };
+		02FFDD0A2BE41437002F0DEF /* ArtWorksGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FFDD092BE41437002F0DEF /* ArtWorksGridView.swift */; };
 		A9830665DE11988BD4356C1A /* Pods_Capstone_Front.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB25843B3C34D20A87B4813 /* Pods_Capstone_Front.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0270D2F32BE0F36500B1B270 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		0270D2F52BE0F37A00B1B270 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		0270D2F72BE0F3B400B1B270 /* ViewModelable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelable.swift; sourceTree = "<group>"; };
+		0270D2F92BE3F8A400B1B270 /* TabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewModel.swift; sourceTree = "<group>"; };
+		0270D2FB2BE3F9AB00B1B270 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		0270D2FD2BE3FDB800B1B270 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		02C3198A2BCE17600030D506 /* Capstone_Front.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Capstone_Front.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02C3198D2BCE17600030D506 /* Capstone_FrontApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Capstone_FrontApp.swift; sourceTree = "<group>"; };
 		02C3198F2BCE17600030D506 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		02C319912BCE17620030D506 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02C319942BCE17620030D506 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		02FFDCFD2BE40DFE002F0DEF /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		02FFDCFF2BE41184002F0DEF /* CircleImageItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImageItem.swift; sourceTree = "<group>"; };
+		02FFDD012BE411BB002F0DEF /* CategoryScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryScrollView.swift; sourceTree = "<group>"; };
+		02FFDD032BE4135B002F0DEF /* ArtWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtWork.swift; sourceTree = "<group>"; };
+		02FFDD052BE413C9002F0DEF /* ArtWorksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtWorksViewModel.swift; sourceTree = "<group>"; };
+		02FFDD072BE41420002F0DEF /* ArtWorkItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtWorkItemView.swift; sourceTree = "<group>"; };
+		02FFDD092BE41437002F0DEF /* ArtWorksGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtWorksGridView.swift; sourceTree = "<group>"; };
 		1397AC5ACD3215A206C3F4D5 /* Pods-Capstone_Front.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Capstone_Front.release.xcconfig"; path = "Target Support Files/Pods-Capstone_Front/Pods-Capstone_Front.release.xcconfig"; sourceTree = "<group>"; };
 		9D2337201F31F80A5B926DE8 /* Pods-Capstone_Front.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Capstone_Front.debug.xcconfig"; path = "Target Support Files/Pods-Capstone_Front/Pods-Capstone_Front.debug.xcconfig"; sourceTree = "<group>"; };
 		EAB25843B3C34D20A87B4813 /* Pods_Capstone_Front.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Capstone_Front.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,6 +63,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0270D2F02BDF763600B1B270 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				02FFDD032BE4135B002F0DEF /* ArtWork.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0270D2F12BDF764500B1B270 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0270D2F32BE0F36500B1B270 /* MainView.swift */,
+				0270D2FB2BE3F9AB00B1B270 /* TabBarView.swift */,
+				0270D2FD2BE3FDB800B1B270 /* MenuView.swift */,
+				02FFDCFD2BE40DFE002F0DEF /* SearchView.swift */,
+				02FFDCFF2BE41184002F0DEF /* CircleImageItem.swift */,
+				02FFDD012BE411BB002F0DEF /* CategoryScrollView.swift */,
+				02FFDD072BE41420002F0DEF /* ArtWorkItemView.swift */,
+				02FFDD092BE41437002F0DEF /* ArtWorksGridView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0270D2F22BDF764E00B1B270 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0270D2F52BE0F37A00B1B270 /* MainViewModel.swift */,
+				0270D2F92BE3F8A400B1B270 /* TabBarViewModel.swift */,
+				02FFDD052BE413C9002F0DEF /* ArtWorksViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		02C319812BCE17600030D506 = {
 			isa = PBXGroup;
 			children = (
@@ -58,10 +117,14 @@
 		02C3198C2BCE17600030D506 /* Capstone_Front */ = {
 			isa = PBXGroup;
 			children = (
+				0270D2F22BDF764E00B1B270 /* ViewModel */,
+				0270D2F12BDF764500B1B270 /* View */,
+				0270D2F02BDF763600B1B270 /* Model */,
 				02C3198D2BCE17600030D506 /* Capstone_FrontApp.swift */,
 				02C3198F2BCE17600030D506 /* ContentView.swift */,
 				02C319912BCE17620030D506 /* Assets.xcassets */,
 				02C319932BCE17620030D506 /* Preview Content */,
+				0270D2F72BE0F3B400B1B270 /* ViewModelable.swift */,
 			);
 			path = Capstone_Front;
 			sourceTree = "<group>";
@@ -80,7 +143,6 @@
 				9D2337201F31F80A5B926DE8 /* Pods-Capstone_Front.debug.xcconfig */,
 				1397AC5ACD3215A206C3F4D5 /* Pods-Capstone_Front.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -206,8 +268,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02FFDD022BE411BB002F0DEF /* CategoryScrollView.swift in Sources */,
 				02C319902BCE17600030D506 /* ContentView.swift in Sources */,
+				02FFDCFE2BE40DFE002F0DEF /* SearchView.swift in Sources */,
+				0270D2FE2BE3FDB800B1B270 /* MenuView.swift in Sources */,
+				0270D2F42BE0F36500B1B270 /* MainView.swift in Sources */,
+				02FFDD002BE41184002F0DEF /* CircleImageItem.swift in Sources */,
+				0270D2FC2BE3F9AB00B1B270 /* TabBarView.swift in Sources */,
+				0270D2F82BE0F3B400B1B270 /* ViewModelable.swift in Sources */,
+				02FFDD0A2BE41437002F0DEF /* ArtWorksGridView.swift in Sources */,
 				02C3198E2BCE17600030D506 /* Capstone_FrontApp.swift in Sources */,
+				0270D2FA2BE3F8A400B1B270 /* TabBarViewModel.swift in Sources */,
+				02FFDD082BE41420002F0DEF /* ArtWorkItemView.swift in Sources */,
+				02FFDD062BE413C9002F0DEF /* ArtWorksViewModel.swift in Sources */,
+				02FFDD042BE4135B002F0DEF /* ArtWork.swift in Sources */,
+				0270D2F62BE0F37A00B1B270 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,7 +326,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -314,7 +389,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
