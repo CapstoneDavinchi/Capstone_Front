@@ -12,11 +12,13 @@ struct MainView: View {
     
     var body: some View {
         ZStack{
-            Color(red: 19 / 255, green: 19 / 255, blue: 19 / 255).ignoresSafeArea()
+            Color(Color.black).ignoresSafeArea()
             
             VStack {
                 TabBarView()
                     .environmentObject(viewModel)
+                
+                SearchView()
                 
                 Spacer()
             }

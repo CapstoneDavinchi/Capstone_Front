@@ -23,10 +23,9 @@ struct TabBarView: View {
             
             Spacer()
             
-            Text("DA VINCI")
-                .font(.system(size: 18, weight: .bold))
-                .foregroundColor(.white)
-            
+            Image("Image_AppTitle")
+                .resizable()
+                .frame(width: 78, height: 12)
             Spacer()
             
             Button(action: {
@@ -34,11 +33,11 @@ struct TabBarView: View {
             }) {
                 Image(systemName: "list.dash")
                     .resizable()
-                    .frame(width: 28, height: 28)
+                    .frame(width: 22, height: 12)
             }
         }
         .padding(.horizontal, 16)
-        .padding(.vertical, 8)
+        .padding(.vertical, 18)
         .background(Color.black)
         .foregroundColor(.white)
     }
