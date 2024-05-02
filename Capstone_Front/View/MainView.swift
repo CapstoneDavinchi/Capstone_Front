@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct MainView: View {
-    @StateObject var viewModel = TabBarViewModel()
+    @StateObject var tabviewModel = TabBarViewModel()
+    @StateObject var ArtWorkviewModel = ArtworksViewModel()
     
     var body: some View {
         ZStack{
@@ -16,14 +17,23 @@ struct MainView: View {
             
             VStack {
                 TabBarView()
-                    .environmentObject(viewModel)
+                    .environmentObject(tabviewModel)
                 
                 SearchView()
                 
-                Spacer()
+                CategoryScrollView()
+                
+                Divider() // 기본적으로 가로 선
+                    .background(Color.white) // 선의 색상을 변경
+                    .frame(height: 1)
+                    .padding(.horizontal, 12)
+                
+                ArtworksGridView(viewModel: ArtWorkviewModel)
+                
+                
             }
             .overlay(
-                viewModel.showMenu ? AnyView(MenuView()
+                tabviewModel.showMenu ? AnyView(MenuView()
                     .frame(maxWidth: 200)
                     .background(Color.white)
                     .position(x: UIScreen.main.bounds.width - 100, y: UIScreen.main.bounds.height / 2)

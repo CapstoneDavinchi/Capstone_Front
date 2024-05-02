@@ -16,7 +16,7 @@ struct TabBarView: View {
             Button(action: {
                 navigateToProfile()
             }) {
-                Image(systemName: "person.circle")
+                Image("Profile")
                     .resizable()
                     .frame(width: 32, height: 32)
             }
