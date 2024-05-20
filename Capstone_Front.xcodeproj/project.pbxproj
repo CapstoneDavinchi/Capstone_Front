@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02094CC72BECA6130098995E /* AlbumShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02094CC62BECA6130098995E /* AlbumShape.swift */; };
+		02094CC92BECA93B0098995E /* PersonalPageWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02094CC82BECA93B0098995E /* PersonalPageWork.swift */; };
+		02094CCB2BECB5170098995E /* PersonalPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02094CCA2BECB5170098995E /* PersonalPage.swift */; };
 		0270D2F42BE0F36500B1B270 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0270D2F32BE0F36500B1B270 /* MainView.swift */; };
 		0270D2F62BE0F37A00B1B270 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0270D2F52BE0F37A00B1B270 /* MainViewModel.swift */; };
 		0270D2F82BE0F3B400B1B270 /* ViewModelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0270D2F72BE0F3B400B1B270 /* ViewModelable.swift */; };
@@ -24,10 +27,14 @@
 		02FFDD062BE413C9002F0DEF /* ArtWorksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FFDD052BE413C9002F0DEF /* ArtWorksViewModel.swift */; };
 		02FFDD082BE41420002F0DEF /* ArtWorkItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FFDD072BE41420002F0DEF /* ArtWorkItemView.swift */; };
 		02FFDD0A2BE41437002F0DEF /* ArtWorksGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FFDD092BE41437002F0DEF /* ArtWorksGridView.swift */; };
+		02FFDD0E2BE41ADB002F0DEF /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 02FFDD0D2BE41ADB002F0DEF /* .gitignore */; };
 		A9830665DE11988BD4356C1A /* Pods_Capstone_Front.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB25843B3C34D20A87B4813 /* Pods_Capstone_Front.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02094CC62BECA6130098995E /* AlbumShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumShape.swift; sourceTree = "<group>"; };
+		02094CC82BECA93B0098995E /* PersonalPageWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalPageWork.swift; sourceTree = "<group>"; };
+		02094CCA2BECB5170098995E /* PersonalPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalPage.swift; sourceTree = "<group>"; };
 		0270D2F32BE0F36500B1B270 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		0270D2F52BE0F37A00B1B270 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		0270D2F72BE0F3B400B1B270 /* ViewModelable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelable.swift; sourceTree = "<group>"; };
@@ -46,6 +53,7 @@
 		02FFDD052BE413C9002F0DEF /* ArtWorksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtWorksViewModel.swift; sourceTree = "<group>"; };
 		02FFDD072BE41420002F0DEF /* ArtWorkItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtWorkItemView.swift; sourceTree = "<group>"; };
 		02FFDD092BE41437002F0DEF /* ArtWorksGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtWorksGridView.swift; sourceTree = "<group>"; };
+		02FFDD0D2BE41ADB002F0DEF /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		1397AC5ACD3215A206C3F4D5 /* Pods-Capstone_Front.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Capstone_Front.release.xcconfig"; path = "Target Support Files/Pods-Capstone_Front/Pods-Capstone_Front.release.xcconfig"; sourceTree = "<group>"; };
 		9D2337201F31F80A5B926DE8 /* Pods-Capstone_Front.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Capstone_Front.debug.xcconfig"; path = "Target Support Files/Pods-Capstone_Front/Pods-Capstone_Front.debug.xcconfig"; sourceTree = "<group>"; };
 		EAB25843B3C34D20A87B4813 /* Pods_Capstone_Front.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Capstone_Front.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,14 +82,14 @@
 		0270D2F12BDF764500B1B270 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				02FFDD0F2BE4990E002F0DEF /* Component */,
 				0270D2F32BE0F36500B1B270 /* MainView.swift */,
-				0270D2FB2BE3F9AB00B1B270 /* TabBarView.swift */,
-				0270D2FD2BE3FDB800B1B270 /* MenuView.swift */,
-				02FFDCFD2BE40DFE002F0DEF /* SearchView.swift */,
 				02FFDCFF2BE41184002F0DEF /* CircleImageItem.swift */,
 				02FFDD012BE411BB002F0DEF /* CategoryScrollView.swift */,
 				02FFDD072BE41420002F0DEF /* ArtWorkItemView.swift */,
 				02FFDD092BE41437002F0DEF /* ArtWorksGridView.swift */,
+				02094CC82BECA93B0098995E /* PersonalPageWork.swift */,
+				02094CCA2BECB5170098995E /* PersonalPage.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -99,6 +107,7 @@
 		02C319812BCE17600030D506 = {
 			isa = PBXGroup;
 			children = (
+				02FFDD0D2BE41ADB002F0DEF /* .gitignore */,
 				02C3198C2BCE17600030D506 /* Capstone_Front */,
 				02C3198B2BCE17600030D506 /* Products */,
 				20F5E13EC29367BA2BE325FA /* Pods */,
@@ -135,6 +144,17 @@
 				02C319942BCE17620030D506 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		02FFDD0F2BE4990E002F0DEF /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				0270D2FB2BE3F9AB00B1B270 /* TabBarView.swift */,
+				02FFDCFD2BE40DFE002F0DEF /* SearchView.swift */,
+				0270D2FD2BE3FDB800B1B270 /* MenuView.swift */,
+				02094CC62BECA6130098995E /* AlbumShape.swift */,
+			);
+			path = Component;
 			sourceTree = "<group>";
 		};
 		20F5E13EC29367BA2BE325FA /* Pods */ = {
@@ -215,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				02C319952BCE17620030D506 /* Preview Assets.xcassets in Resources */,
+				02FFDD0E2BE41ADB002F0DEF /* .gitignore in Resources */,
 				02C319922BCE17620030D506 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,9 +289,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02094CCB2BECB5170098995E /* PersonalPage.swift in Sources */,
 				02FFDD022BE411BB002F0DEF /* CategoryScrollView.swift in Sources */,
 				02C319902BCE17600030D506 /* ContentView.swift in Sources */,
 				02FFDCFE2BE40DFE002F0DEF /* SearchView.swift in Sources */,
+				02094CC92BECA93B0098995E /* PersonalPageWork.swift in Sources */,
 				0270D2FE2BE3FDB800B1B270 /* MenuView.swift in Sources */,
 				0270D2F42BE0F36500B1B270 /* MainView.swift in Sources */,
 				02FFDD002BE41184002F0DEF /* CircleImageItem.swift in Sources */,
@@ -281,6 +304,7 @@
 				0270D2FA2BE3F8A400B1B270 /* TabBarViewModel.swift in Sources */,
 				02FFDD082BE41420002F0DEF /* ArtWorkItemView.swift in Sources */,
 				02FFDD062BE413C9002F0DEF /* ArtWorksViewModel.swift in Sources */,
+				02094CC72BECA6130098995E /* AlbumShape.swift in Sources */,
 				02FFDD042BE4135B002F0DEF /* ArtWork.swift in Sources */,
 				0270D2F62BE0F37A00B1B270 /* MainViewModel.swift in Sources */,
 			);
