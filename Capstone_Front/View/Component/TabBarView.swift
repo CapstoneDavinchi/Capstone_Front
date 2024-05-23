@@ -14,7 +14,7 @@ struct TabBarView: View {
         HStack {
             // 왼쪽 개인작품전시페이지
             Button(action: {
-                navigateToProfile()
+                viewModel.showPersonalPage = true
             }) {
                 Image("Profile")
                     .resizable()
