@@ -12,7 +12,7 @@ struct TabBarView: View {
     
     var body: some View {
         HStack {
-            // 왼쪽 마이페이지
+            // 왼쪽 개인작품전시페이지
             Button(action: {
                 navigateToProfile()
             }) {
