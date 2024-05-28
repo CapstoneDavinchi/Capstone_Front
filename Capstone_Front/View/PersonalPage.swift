@@ -9,31 +9,33 @@ import SwiftUI
 
 struct PersonalPage: View {
     @State private var selectedPage = 0
-    @StateObject var tabviewModel = TabBarViewModel()
+    @ObservedObject var tabviewModel = TabBarViewModel()
     
     var body: some View {
-        ZStack {
-            Color(Color.black).ignoresSafeArea()
-            
-            VStack(spacing: 0) {
-                TabBarView()
-                    .environmentObject(tabviewModel)
+        NavigationView {
+            ZStack {
+                Color(Color.black).ignoresSafeArea()
                 
-                ImageScrollView()
-                    .frame(height: 300)
-                
-                ImageDetailView()
-                
-                Spacer()
-                
-                HStack {
+                VStack(spacing: 0) {
+                    TabBarView()
+                        .environmentObject(tabviewModel)
+                    
+                    ImageScrollView()
+                        .frame(height: 300)
+                    
+                    ImageDetailView()
+                    
                     Spacer()
                     
-                    UploadButton()
-                        .padding(.trailing, 24)
+                    HStack {
+                        Spacer()
+                        
+                        UploadButton()
+                            .padding(.trailing, 24)
+                    }
                 }
             }
-        }
+        }.navigationBarHidden(true)
     }
 }
 
@@ -41,5 +43,5 @@ struct PersonalPage: View {
 
 
 #Preview {
-    PersonalPage()
+    PersonalPage(tabviewModel: TabBarViewModel())
 }

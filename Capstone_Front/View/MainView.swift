@@ -14,7 +14,7 @@ struct MainView: View {
     var body: some View {
         NavigationView {
             ZStack{
-                NavigationLink(destination: PersonalPage(), isActive: $tabviewModel.showPersonalPage) {
+                NavigationLink(destination: PersonalPage(tabviewModel: tabviewModel), isActive: $tabviewModel.showPersonalPage) {
                     EmptyView()
                 }
                 

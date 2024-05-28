@@ -83,6 +83,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02180BD82C0467C300066FF9 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				0270D2FB2BE3F9AB00B1B270 /* TabBarView.swift */,
+				0270D2FD2BE3FDB800B1B270 /* MenuView.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		0270D2F02BDF763600B1B270 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,9 +171,8 @@
 		02FFDD0F2BE4990E002F0DEF /* Component */ = {
 			isa = PBXGroup;
 			children = (
-				0270D2FB2BE3F9AB00B1B270 /* TabBarView.swift */,
+				02180BD82C0467C300066FF9 /* Common */,
 				02FFDCFD2BE40DFE002F0DEF /* SearchView.swift */,
-				0270D2FD2BE3FDB800B1B270 /* MenuView.swift */,
 				02094CC62BECA6130098995E /* AlbumShape.swift */,
 				020118012BFDC7F200C13256 /* ImageScrollView.swift */,
 				020118032BFDC92200C13256 /* ImageDetailView.swift */,
