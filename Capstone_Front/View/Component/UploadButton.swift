@@ -9,10 +9,7 @@ import SwiftUI
 
 struct UploadButton: View {
     var body: some View {
-        
-        Button(action: {
-            print("새 작품 업로드 버튼이 클릭되었습니다.")
-        }) {
+        NavigationLink(destination: ImageUploadView()) {
             HStack(spacing: 8) {
                 Image(systemName: "pencil")
                     .resizable()
@@ -28,7 +25,6 @@ struct UploadButton: View {
             .background(Color.white) // 배경색
             .cornerRadius(100) // 모서리 둥글게
         }
-
     }
 }
 

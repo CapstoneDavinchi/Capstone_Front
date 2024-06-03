@@ -14,7 +14,7 @@ struct PersonalPage: View {
     var body: some View {
         NavigationView {
             ZStack {
-                Color(Color.black).ignoresSafeArea()
+                Color.black.ignoresSafeArea()
                 
                 VStack(spacing: 0) {
                     TabBarView()
@@ -30,12 +30,15 @@ struct PersonalPage: View {
                     HStack {
                         Spacer()
                         
-                        UploadButton()
-                            .padding(.trailing, 24)
+                        // UploadButton을 NavigationLink로 감싸 이동하도록 설정
+                        NavigationLink(destination: ImageUploadView().environmentObject(tabviewModel)) {
+                            UploadButton()
+                        }
+                        .padding(.trailing, 24)
                     }
                 }
             }
-        }.navigationBarHidden(true)
+        }.navigationBarHidden(true) // Navigation bar 숨기기
     }
 }
 
