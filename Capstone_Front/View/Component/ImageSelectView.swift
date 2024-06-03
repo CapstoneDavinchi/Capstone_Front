@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct ImageSelectView: View {
+    @State private var openPhoto = false
+    
     var body: some View {
         Button(action: {
-            print("select image")
+            self.openPhoto = true
         }, label: {
             ZStack {
                 RoundedRectangle(cornerRadius: 10)
@@ -29,6 +31,9 @@ struct ImageSelectView: View {
         .frame(width: 110, height: 110)
         .background(Color(hex: "3A3532"))
         .cornerRadius(10)
+        .sheet(isPresented: $openPhoto, content: {
+            ImagePicker(sourceType: .photoLibrary)
+        })
     }
 }
 
