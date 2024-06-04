@@ -102,12 +102,17 @@
 		02180BD82C0467C300066FF9 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				020118072BFF16ED00C13256 /* ReactionView.swift */,
+				020118052BFF13C300C13256 /* CateLabelView.swift */,
 				0270D2FB2BE3F9AB00B1B270 /* TabBarView.swift */,
 				0270D2FD2BE3FDB800B1B270 /* MenuView.swift */,
 				02B729712C0DA9AB00C389FD /* CustomTextField.swift */,
 				02B729732C0DB4F600C389FD /* CustomMultiLineTextField.swift */,
 				02B729752C0DC5FA00C389FD /* CategoryCapsule.swift */,
-				02B729792C0DDF7D00C389FD /* ImagePicker.swift */,
+				02FFDD012BE411BB002F0DEF /* CategoryScrollView.swift */,
+				02FFDCFF2BE41184002F0DEF /* CircleImageItem.swift */,
+				02FFDD092BE41437002F0DEF /* ArtWorksGridView.swift */,
+				02FFDD072BE41420002F0DEF /* ArtWorkItemView.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -125,11 +130,6 @@
 			children = (
 				02FFDD0F2BE4990E002F0DEF /* Component */,
 				0270D2F32BE0F36500B1B270 /* MainView.swift */,
-				02FFDCFF2BE41184002F0DEF /* CircleImageItem.swift */,
-				02FFDD012BE411BB002F0DEF /* CategoryScrollView.swift */,
-				02FFDD072BE41420002F0DEF /* ArtWorkItemView.swift */,
-				02FFDD092BE41437002F0DEF /* ArtWorksGridView.swift */,
-				02094CC82BECA93B0098995E /* PersonalPageWork.swift */,
 				02094CCA2BECB5170098995E /* PersonalPage.swift */,
 				02E7F6402C086F8900C6EF03 /* ImageUploadView.swift */,
 			);
@@ -144,6 +144,37 @@
 				02FFDD052BE413C9002F0DEF /* ArtWorksViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		02B7297B2C0ED67000C389FD /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				02FFDCFD2BE40DFE002F0DEF /* SearchView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		02B7297C2C0ED7F900C389FD /* PersonalPage */ = {
+			isa = PBXGroup;
+			children = (
+				020118012BFDC7F200C13256 /* ImageScrollView.swift */,
+				020118032BFDC92200C13256 /* ImageDetailView.swift */,
+				0201180B2BFF328400C13256 /* UploadButton.swift */,
+				02094CC62BECA6130098995E /* AlbumShape.swift */,
+				02094CC82BECA93B0098995E /* PersonalPageWork.swift */,
+			);
+			path = PersonalPage;
+			sourceTree = "<group>";
+		};
+		02B7297D2C0EDA2100C389FD /* Upload */ = {
+			isa = PBXGroup;
+			children = (
+				02B729792C0DDF7D00C389FD /* ImagePicker.swift */,
+				02A2FDF02C09827A005B0B22 /* ImageSelectView.swift */,
+				02A2FDF22C09B730005B0B22 /* FeedInfoView.swift */,
+				02B729772C0DD1BC00C389FD /* CategoryView.swift */,
+			);
+			path = Upload;
 			sourceTree = "<group>";
 		};
 		02C319812BCE17600030D506 = {
@@ -192,17 +223,10 @@
 		02FFDD0F2BE4990E002F0DEF /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				02B7297D2C0EDA2100C389FD /* Upload */,
+				02B7297C2C0ED7F900C389FD /* PersonalPage */,
+				02B7297B2C0ED67000C389FD /* Main */,
 				02180BD82C0467C300066FF9 /* Common */,
-				02FFDCFD2BE40DFE002F0DEF /* SearchView.swift */,
-				02094CC62BECA6130098995E /* AlbumShape.swift */,
-				020118012BFDC7F200C13256 /* ImageScrollView.swift */,
-				020118032BFDC92200C13256 /* ImageDetailView.swift */,
-				020118052BFF13C300C13256 /* CateLabelView.swift */,
-				020118072BFF16ED00C13256 /* ReactionView.swift */,
-				0201180B2BFF328400C13256 /* UploadButton.swift */,
-				02A2FDF02C09827A005B0B22 /* ImageSelectView.swift */,
-				02A2FDF22C09B730005B0B22 /* FeedInfoView.swift */,
-				02B729772C0DD1BC00C389FD /* CategoryView.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
