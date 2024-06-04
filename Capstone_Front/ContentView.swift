@@ -11,7 +11,7 @@ struct ContentView: View {
     @State var selectedTab: Tab = .main
     var body: some View {
         ZStack {
-            Color(Color.clear).edgesIgnoringSafeArea(.all)
+            currentBackgroundColor.edgesIgnoringSafeArea(.all)
             
             VStack {
                 Spacer()
@@ -28,11 +28,24 @@ struct ContentView: View {
                     MyPageView()
                 }
                 Spacer()
-                BottomNavigationBar(selectedTab: $selectedTab)
-                    .background(Color.clear).edgesIgnoringSafeArea(.bottom))
+                BottomNavigationBar(selectedTab: $selectedTab, currentBackgroundColor: currentBackgroundColor)
             }
         }
     }
+    var currentBackgroundColor: Color {
+            switch selectedTab {
+            case .main:
+                return Color.black // 메인 뷰 배경색
+            case .market:
+                return Color.white // 마켓 뷰 배경색
+            case .upload:
+                return Color(hex: "3A3532") // 업로드 뷰 배경색
+            case .exhibition:
+                return Color.white // 전시 뷰 배경색
+            case .mypage:
+                return Color.white // 마이 페이지 배경색
+            }
+        }
 }
 
 #Preview {
