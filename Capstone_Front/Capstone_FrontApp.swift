@@ -11,7 +11,7 @@ import SwiftUI
 struct Capstone_FrontApp: App {
     var body: some Scene {
         WindowGroup {
-            MainView()
+            ContentView()
         }
     }
 }

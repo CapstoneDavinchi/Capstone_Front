@@ -8,14 +8,30 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var selectedTab: Tab = .main
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        ZStack {
+            Color(Color.clear).edgesIgnoringSafeArea(.all)
+            
+            VStack {
+                Spacer()
+                switch selectedTab {
+                case .main:
+                    MainView()
+                case .market:
+                    MarketView()
+                case .upload:
+                    ImageUploadView()
+                case .exhibition:
+                    ExhibitionView()
+                case .mypage:
+                    MyPageView()
+                }
+                Spacer()
+                BottomNavigationBar(selectedTab: $selectedTab)
+                    .background(Color.clear).edgesIgnoringSafeArea(.bottom))
+            }
         }
-        .padding()
     }
 }
 
