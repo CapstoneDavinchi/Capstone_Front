@@ -26,7 +26,7 @@ struct MainView: View {
                     
                     Spacer()
                     
-                    SearchView()
+                    SearchView(backgroundColor: Color(hex: "3A3532"), imageColor: Color.white, hasStroke: false)
                     
                     CategoryScrollView()
                     
