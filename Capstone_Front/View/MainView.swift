@@ -24,6 +24,8 @@ struct MainView: View {
                     TabBarView()
                         .environmentObject(tabviewModel)
                     
+                    Spacer()
+                    
                     SearchView()
                     
                     CategoryScrollView()

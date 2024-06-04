@@ -11,6 +11,7 @@ struct ImageUploadView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
     var backButton : some View {
+        ZStack {
             Button{
                 self.presentationMode.wrappedValue.dismiss()
             } label: {
@@ -20,6 +21,8 @@ struct ImageUploadView: View {
                     .foregroundColor(.white)
             }
         }
+        .frame(width: 32, height: 32)
+    }
     
     var body: some View {
         NavigationView {
