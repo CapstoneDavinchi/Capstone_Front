@@ -8,10 +8,24 @@
 import SwiftUI
 
 struct MarketView: View {
+    @StateObject var tabviewModel = TabBarViewModel()
+    
     var body: some View {
-        ZStack {
-            VStack {
-                SearchView(backgroundColor: Color.clear, imageColor: Color(hex: "292929"), hasStroke: true)
+        NavigationView {
+            ZStack {
+                NavigationLink(destination: PersonalPage(tabviewModel: tabviewModel), isActive: $tabviewModel.showPersonalPage) {
+                    EmptyView()
+                }
+                Color(hex: "FFF6EE").ignoresSafeArea()
+                
+                VStack {
+                    TabBarView(currentBackgroundColor: Color(hex: "FFF6EE"))
+                        .environmentObject(tabviewModel)
+                    
+                    SearchView(backgroundColor: Color.clear, imageColor: Color(hex: "292929"), hasStroke: true)
+                    
+                    CategoryScrollView(currentBackgroundColor: Color(hex: "FFF6EE"))
+                }
             }
         }
     }

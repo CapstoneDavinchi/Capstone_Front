@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct CategoryScrollView: View {
+    var currentBackgroundColor: Color
     var items: [(String, String)] = [
             ("image1", "Label1"),
             ("image2", "Label2"),
@@ -29,7 +30,7 @@ struct CategoryScrollView: View {
                         Button(action: {
                             // 해당 아이템 선택 시 동작 추가 가능
                         }) {
-                            CircleImageItem(imageName: item.0, label: item.1)
+                            CircleImageItem(imageName: item.0, label: item.1, backgroundColor: currentBackgroundColor)
                         }
                     }
                 }
@@ -39,5 +40,5 @@ struct CategoryScrollView: View {
 }
 
 #Preview {
-    CategoryScrollView()
+    CategoryScrollView(currentBackgroundColor: Color.black)
 }

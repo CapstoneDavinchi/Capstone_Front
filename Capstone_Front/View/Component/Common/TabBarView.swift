@@ -9,6 +9,11 @@ import SwiftUI
 
 struct TabBarView: View {
     @EnvironmentObject var viewModel: TabBarViewModel
+    var currentBackgroundColor: Color
+    
+    private func isDarkBackground(_ color: Color) -> Bool {
+           color == Color.black || color == Color(hex: "3A3532")
+    }
     
     var body: some View {
         HStack {
@@ -58,14 +63,10 @@ struct TabBarView: View {
         .padding(.horizontal, 16)
         .frame(height: 64)
         .background(Color.clear)
-        .foregroundColor(.white)
+        .foregroundColor(isDarkBackground(currentBackgroundColor) ? .white : .black)
     }
     
     func navigateToProfile() {
         print("Navigating")
     }
-}
-
-#Preview {
-    TabBarView()
 }

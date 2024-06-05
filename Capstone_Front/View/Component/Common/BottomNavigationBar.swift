@@ -17,7 +17,11 @@ enum Tab {
 
 struct BottomNavigationBar: View {
     @Binding var selectedTab: Tab
-    var currentBackgroundColor: Color // 이 값을 ContentView로부터 받아야 합니다.
+    var currentBackgroundColor: Color 
+    
+    private func isDarkBackground(_ color: Color) -> Bool {
+           color == Color.black || color == Color(hex: "3A3532")
+    }
 
     var body: some View {
         HStack {
@@ -29,10 +33,10 @@ struct BottomNavigationBar: View {
                 VStack {
                     Image(systemName: "house")
                         .frame(width: 28, height: 28)
-                        .foregroundColor(currentBackgroundColor == .white ? .black : .white)
+                        .foregroundColor(isDarkBackground(currentBackgroundColor) ? .white : .black)
                     Rectangle() // 밑줄
                         .frame(height: 2)
-                        .foregroundColor(currentBackgroundColor == .black ? .yellow : .black)
+                        .foregroundColor(isDarkBackground(currentBackgroundColor) ? .yellow : .black)
                         .opacity(selectedTab == .main ? 1 : 0) // 선택된 탭에만 밑줄 표시
                 }
             }
@@ -45,10 +49,10 @@ struct BottomNavigationBar: View {
                 VStack {
                     Image(systemName: "bag")
                         .frame(width: 28, height: 28)
-                        .foregroundColor(currentBackgroundColor == .white ? .black : .white)
+                        .foregroundColor(isDarkBackground(currentBackgroundColor) ? .white : .black)
                     Rectangle() // 밑줄
                         .frame(height: 2)
-                        .foregroundColor(currentBackgroundColor == .black ? .yellow : .black)
+                        .foregroundColor(isDarkBackground(currentBackgroundColor) ? .yellow : .black)
                         .opacity(selectedTab == .market ? 1 : 0)
                 }
             }
@@ -61,10 +65,10 @@ struct BottomNavigationBar: View {
                 VStack {
                     Image(systemName: "menubar.arrow.up.rectangle")
                         .frame(width: 28, height: 28)
-                        .foregroundColor(currentBackgroundColor == .white ? .black : .white)
+                        .foregroundColor(isDarkBackground(currentBackgroundColor) ? .white : .black)
                     Rectangle() // 밑줄
                         .frame(height: 2)
-                        .foregroundColor(currentBackgroundColor == .black ? .yellow : .black)
+                        .foregroundColor(isDarkBackground(currentBackgroundColor) ? .yellow : .black)
                         .opacity(selectedTab == .upload ? 1 : 0)
                 }
             }
@@ -77,10 +81,10 @@ struct BottomNavigationBar: View {
                 VStack {
                     Image(systemName: "calendar")
                         .frame(width: 28, height: 28)
-                        .foregroundColor(currentBackgroundColor == .white ? .black : .white)
+                        .foregroundColor(isDarkBackground(currentBackgroundColor) ? .white : .black)
                     Rectangle() // 밑줄
                         .frame(height: 2)
-                        .foregroundColor(currentBackgroundColor == .black ? .yellow : .black)
+                        .foregroundColor(isDarkBackground(currentBackgroundColor) ? .yellow : .black)
                         .opacity(selectedTab == .exhibition ? 1 : 0)
                 }
             }
@@ -93,10 +97,10 @@ struct BottomNavigationBar: View {
                 VStack {
                     Image(systemName: "person")
                         .frame(width: 28, height: 28)
-                        .foregroundColor(currentBackgroundColor == .white ? .black : .white)
+                        .foregroundColor(isDarkBackground(currentBackgroundColor) ? .white : .black)
                     Rectangle() // 밑줄
                         .frame(height: 2)
-                        .foregroundColor(currentBackgroundColor == .black ? .yellow : .black)
+                        .foregroundColor(isDarkBackground(currentBackgroundColor) ? .yellow : .black)
                         .opacity(selectedTab == .mypage ? 1 : 0)
                 }
             }

@@ -10,16 +10,17 @@ import SwiftUI
 struct CustomTextField: UIViewRepresentable {
     @Binding var text: String
     var placeholder: String
+    var foregroundColor: UIColor
     
     func makeUIView(context: Context) -> UITextField {
         let textField = UITextField(frame: .zero)
         textField.placeholder = placeholder
-        textField.textColor = UIColor.white
+        textField.textColor = foregroundColor
         textField.font = UIFont.systemFont(ofSize: 14)
         textField.attributedPlaceholder = NSAttributedString(
             string: placeholder,
             attributes: [
-                NSAttributedString.Key.foregroundColor: UIColor.white,
+                NSAttributedString.Key.foregroundColor: foregroundColor,
                 NSAttributedString.Key.font: UIFont.systemFont(ofSize: 14)
             ]
         )

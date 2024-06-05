@@ -23,7 +23,7 @@ struct FeedInfoView: View {
                     Spacer()
                 }
                 
-                CustomTextField(text: $nameText, placeholder: "작품명")
+                CustomTextField(text: $nameText, placeholder: "작품명", foregroundColor: UIColor(Color.white))
                     .cornerRadius(10)
                     .overlay(
                         RoundedRectangle(cornerRadius: 10)

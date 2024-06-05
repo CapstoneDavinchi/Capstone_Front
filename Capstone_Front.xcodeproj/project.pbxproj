@@ -110,6 +110,7 @@
 		02180BD82C0467C300066FF9 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				02FFDCFD2BE40DFE002F0DEF /* SearchView.swift */,
 				020118072BFF16ED00C13256 /* ReactionView.swift */,
 				020118052BFF13C300C13256 /* CateLabelView.swift */,
 				0270D2FB2BE3F9AB00B1B270 /* TabBarView.swift */,
@@ -161,7 +162,6 @@
 		02B7297B2C0ED67000C389FD /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				02FFDCFD2BE40DFE002F0DEF /* SearchView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";

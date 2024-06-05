@@ -17,7 +17,7 @@ struct PersonalPage: View {
                 Color.black.ignoresSafeArea()
                 
                 VStack(spacing: 0) {
-                    TabBarView()
+                    TabBarView(currentBackgroundColor: Color.black)
                         .environmentObject(tabviewModel)
                     
                     ImageScrollView()
