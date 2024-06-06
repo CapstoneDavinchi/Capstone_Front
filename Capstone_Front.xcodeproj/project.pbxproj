@@ -37,6 +37,10 @@
 		02C319902BCE17600030D506 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C3198F2BCE17600030D506 /* ContentView.swift */; };
 		02C319922BCE17620030D506 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02C319912BCE17620030D506 /* Assets.xcassets */; };
 		02C319952BCE17620030D506 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02C319942BCE17620030D506 /* Preview Assets.xcassets */; };
+		02E4F4482C105748007CCD2E /* MarketItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E4F4472C105748007CCD2E /* MarketItemView.swift */; };
+		02E4F44A2C1057D5007CCD2E /* MarketItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E4F4492C1057D5007CCD2E /* MarketItem.swift */; };
+		02E4F44C2C10598D007CCD2E /* MarketItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E4F44B2C10598D007CCD2E /* MarketItemViewModel.swift */; };
+		02E4F44E2C105A0A007CCD2E /* MarketItemsGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E4F44D2C105A0A007CCD2E /* MarketItemsGridView.swift */; };
 		02E7F6412C086F8900C6EF03 /* ImageUploadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E7F6402C086F8900C6EF03 /* ImageUploadView.swift */; };
 		02FFDCFE2BE40DFE002F0DEF /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FFDCFD2BE40DFE002F0DEF /* SearchView.swift */; };
 		02FFDD002BE41184002F0DEF /* CircleImageItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FFDCFF2BE41184002F0DEF /* CircleImageItem.swift */; };
@@ -81,6 +85,10 @@
 		02C3198F2BCE17600030D506 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		02C319912BCE17620030D506 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02C319942BCE17620030D506 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		02E4F4472C105748007CCD2E /* MarketItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketItemView.swift; sourceTree = "<group>"; };
+		02E4F4492C1057D5007CCD2E /* MarketItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketItem.swift; sourceTree = "<group>"; };
+		02E4F44B2C10598D007CCD2E /* MarketItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketItemViewModel.swift; sourceTree = "<group>"; };
+		02E4F44D2C105A0A007CCD2E /* MarketItemsGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketItemsGridView.swift; sourceTree = "<group>"; };
 		02E7F6402C086F8900C6EF03 /* ImageUploadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploadView.swift; sourceTree = SOURCE_ROOT; };
 		02FFDCFD2BE40DFE002F0DEF /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		02FFDCFF2BE41184002F0DEF /* CircleImageItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImageItem.swift; sourceTree = "<group>"; };
@@ -120,8 +128,6 @@
 				02B729752C0DC5FA00C389FD /* CategoryCapsule.swift */,
 				02FFDD012BE411BB002F0DEF /* CategoryScrollView.swift */,
 				02FFDCFF2BE41184002F0DEF /* CircleImageItem.swift */,
-				02FFDD092BE41437002F0DEF /* ArtWorksGridView.swift */,
-				02FFDD072BE41420002F0DEF /* ArtWorkItemView.swift */,
 				02B729842C0F108E00C389FD /* BottomNavigationBar.swift */,
 			);
 			path = Common;
@@ -131,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				02FFDD032BE4135B002F0DEF /* ArtWork.swift */,
+				02E4F4492C1057D5007CCD2E /* MarketItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -155,6 +162,7 @@
 				0270D2F52BE0F37A00B1B270 /* MainViewModel.swift */,
 				0270D2F92BE3F8A400B1B270 /* TabBarViewModel.swift */,
 				02FFDD052BE413C9002F0DEF /* ArtWorksViewModel.swift */,
+				02E4F44B2C10598D007CCD2E /* MarketItemViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -162,6 +170,8 @@
 		02B7297B2C0ED67000C389FD /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				02FFDD072BE41420002F0DEF /* ArtWorkItemView.swift */,
+				02FFDD092BE41437002F0DEF /* ArtWorksGridView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -232,9 +242,19 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		02E4F4462C105737007CCD2E /* Market */ = {
+			isa = PBXGroup;
+			children = (
+				02E4F4472C105748007CCD2E /* MarketItemView.swift */,
+				02E4F44D2C105A0A007CCD2E /* MarketItemsGridView.swift */,
+			);
+			path = Market;
+			sourceTree = "<group>";
+		};
 		02FFDD0F2BE4990E002F0DEF /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				02E4F4462C105737007CCD2E /* Market */,
 				02B7297D2C0EDA2100C389FD /* Upload */,
 				02B7297C2C0ED7F900C389FD /* PersonalPage */,
 				02B7297B2C0ED67000C389FD /* Main */,
@@ -386,7 +406,9 @@
 				02B729832C0F0FB300C389FD /* MyPageView.swift in Sources */,
 				02A2FDF12C09827A005B0B22 /* ImageSelectView.swift in Sources */,
 				02094CC92BECA93B0098995E /* PersonalPageWork.swift in Sources */,
+				02E4F44E2C105A0A007CCD2E /* MarketItemsGridView.swift in Sources */,
 				02B729762C0DC5FA00C389FD /* CategoryCapsule.swift in Sources */,
+				02E4F44A2C1057D5007CCD2E /* MarketItem.swift in Sources */,
 				0270D2FE2BE3FDB800B1B270 /* MenuView.swift in Sources */,
 				02B7297F2C0F0F1D00C389FD /* MarketView.swift in Sources */,
 				0270D2F42BE0F36500B1B270 /* MainView.swift in Sources */,
@@ -402,11 +424,13 @@
 				02A2FDF32C09B730005B0B22 /* FeedInfoView.swift in Sources */,
 				02C3198E2BCE17600030D506 /* Capstone_FrontApp.swift in Sources */,
 				0270D2FA2BE3F8A400B1B270 /* TabBarViewModel.swift in Sources */,
+				02E4F4482C105748007CCD2E /* MarketItemView.swift in Sources */,
 				02B729742C0DB4F600C389FD /* CustomMultiLineTextField.swift in Sources */,
 				02FFDD082BE41420002F0DEF /* ArtWorkItemView.swift in Sources */,
 				02B729782C0DD1BC00C389FD /* CategoryView.swift in Sources */,
 				020118062BFF13C300C13256 /* CateLabelView.swift in Sources */,
 				020118082BFF16ED00C13256 /* ReactionView.swift in Sources */,
+				02E4F44C2C10598D007CCD2E /* MarketItemViewModel.swift in Sources */,
 				02FFDD062BE413C9002F0DEF /* ArtWorksViewModel.swift in Sources */,
 				02094CC72BECA6130098995E /* AlbumShape.swift in Sources */,
 				02FFDD042BE4135B002F0DEF /* ArtWork.swift in Sources */,
