@@ -34,6 +34,15 @@ struct MarketView: View {
                     
                     MarketItemsGridView(viewModel: marketItemviewmodel)
                 }
+                
+                VStack {
+                    Spacer()
+                    HStack {
+                        Spacer()
+                        MarketUploadButton() // 여기에 UploadButton 구현
+                            .padding(16) // 우측 하단에 적당한 간격을 두기
+                    }
+                }
             }
         }
     }

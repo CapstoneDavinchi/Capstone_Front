@@ -46,6 +46,15 @@ struct MainView: View {
                         .position(x: UIScreen.main.bounds.width - 100, y: UIScreen.main.bounds.height / 2)
                     ) : AnyView(EmptyView())
                 )
+                
+                VStack {
+                    Spacer()
+                    HStack {
+                        Spacer()
+                        UploadButton() // 여기에 UploadButton 구현
+                            .padding(16) // 우측 하단에 적당한 간격을 두기
+                    }
+                }
             }
         }
     }

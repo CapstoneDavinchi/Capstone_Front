@@ -41,6 +41,12 @@
 		02E4F44A2C1057D5007CCD2E /* MarketItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E4F4492C1057D5007CCD2E /* MarketItem.swift */; };
 		02E4F44C2C10598D007CCD2E /* MarketItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E4F44B2C10598D007CCD2E /* MarketItemViewModel.swift */; };
 		02E4F44E2C105A0A007CCD2E /* MarketItemsGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E4F44D2C105A0A007CCD2E /* MarketItemsGridView.swift */; };
+		02E4F4502C119452007CCD2E /* MarketUploadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E4F44F2C119452007CCD2E /* MarketUploadView.swift */; };
+		02E4F4522C11960F007CCD2E /* ProductFeedInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E4F4512C11960F007CCD2E /* ProductFeedInfoView.swift */; };
+		02E4F4542C11961F007CCD2E /* ProductImageSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E4F4532C11961F007CCD2E /* ProductImageSelectView.swift */; };
+		02E4F4562C119B16007CCD2E /* MarketCategoryCapsule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E4F4552C119B16007CCD2E /* MarketCategoryCapsule.swift */; };
+		02E4F4582C119BA1007CCD2E /* MarketCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E4F4572C119BA1007CCD2E /* MarketCategoryView.swift */; };
+		02E4F45A2C119EB3007CCD2E /* MarketUploadButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E4F4592C119EB3007CCD2E /* MarketUploadButton.swift */; };
 		02E7F6412C086F8900C6EF03 /* ImageUploadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E7F6402C086F8900C6EF03 /* ImageUploadView.swift */; };
 		02FFDCFE2BE40DFE002F0DEF /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FFDCFD2BE40DFE002F0DEF /* SearchView.swift */; };
 		02FFDD002BE41184002F0DEF /* CircleImageItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FFDCFF2BE41184002F0DEF /* CircleImageItem.swift */; };
@@ -89,6 +95,12 @@
 		02E4F4492C1057D5007CCD2E /* MarketItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketItem.swift; sourceTree = "<group>"; };
 		02E4F44B2C10598D007CCD2E /* MarketItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketItemViewModel.swift; sourceTree = "<group>"; };
 		02E4F44D2C105A0A007CCD2E /* MarketItemsGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketItemsGridView.swift; sourceTree = "<group>"; };
+		02E4F44F2C119452007CCD2E /* MarketUploadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketUploadView.swift; sourceTree = "<group>"; };
+		02E4F4512C11960F007CCD2E /* ProductFeedInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductFeedInfoView.swift; sourceTree = "<group>"; };
+		02E4F4532C11961F007CCD2E /* ProductImageSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductImageSelectView.swift; sourceTree = "<group>"; };
+		02E4F4552C119B16007CCD2E /* MarketCategoryCapsule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketCategoryCapsule.swift; sourceTree = "<group>"; };
+		02E4F4572C119BA1007CCD2E /* MarketCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketCategoryView.swift; sourceTree = "<group>"; };
+		02E4F4592C119EB3007CCD2E /* MarketUploadButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketUploadButton.swift; sourceTree = "<group>"; };
 		02E7F6402C086F8900C6EF03 /* ImageUploadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploadView.swift; sourceTree = SOURCE_ROOT; };
 		02FFDCFD2BE40DFE002F0DEF /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		02FFDCFF2BE41184002F0DEF /* CircleImageItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImageItem.swift; sourceTree = "<group>"; };
@@ -118,6 +130,7 @@
 		02180BD82C0467C300066FF9 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				02FFDD012BE411BB002F0DEF /* CategoryScrollView.swift */,
 				02FFDCFD2BE40DFE002F0DEF /* SearchView.swift */,
 				020118072BFF16ED00C13256 /* ReactionView.swift */,
 				020118052BFF13C300C13256 /* CateLabelView.swift */,
@@ -125,8 +138,6 @@
 				0270D2FD2BE3FDB800B1B270 /* MenuView.swift */,
 				02B729712C0DA9AB00C389FD /* CustomTextField.swift */,
 				02B729732C0DB4F600C389FD /* CustomMultiLineTextField.swift */,
-				02B729752C0DC5FA00C389FD /* CategoryCapsule.swift */,
-				02FFDD012BE411BB002F0DEF /* CategoryScrollView.swift */,
 				02FFDCFF2BE41184002F0DEF /* CircleImageItem.swift */,
 				02B729842C0F108E00C389FD /* BottomNavigationBar.swift */,
 			);
@@ -152,6 +163,7 @@
 				02B7297E2C0F0F1D00C389FD /* MarketView.swift */,
 				02B729802C0F0F7F00C389FD /* ExhibitionView.swift */,
 				02B729822C0F0FB300C389FD /* MyPageView.swift */,
+				02E4F44F2C119452007CCD2E /* MarketUploadView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -195,6 +207,7 @@
 				02A2FDF02C09827A005B0B22 /* ImageSelectView.swift */,
 				02A2FDF22C09B730005B0B22 /* FeedInfoView.swift */,
 				02B729772C0DD1BC00C389FD /* CategoryView.swift */,
+				02B729752C0DC5FA00C389FD /* CategoryCapsule.swift */,
 			);
 			path = Upload;
 			sourceTree = "<group>";
@@ -247,6 +260,11 @@
 			children = (
 				02E4F4472C105748007CCD2E /* MarketItemView.swift */,
 				02E4F44D2C105A0A007CCD2E /* MarketItemsGridView.swift */,
+				02E4F4512C11960F007CCD2E /* ProductFeedInfoView.swift */,
+				02E4F4532C11961F007CCD2E /* ProductImageSelectView.swift */,
+				02E4F4552C119B16007CCD2E /* MarketCategoryCapsule.swift */,
+				02E4F4572C119BA1007CCD2E /* MarketCategoryView.swift */,
+				02E4F4592C119EB3007CCD2E /* MarketUploadButton.swift */,
 			);
 			path = Market;
 			sourceTree = "<group>";
@@ -400,9 +418,12 @@
 				02FFDD022BE411BB002F0DEF /* CategoryScrollView.swift in Sources */,
 				0201180A2BFF2C9C00C13256 /* Color.swift in Sources */,
 				02C319902BCE17600030D506 /* ContentView.swift in Sources */,
+				02E4F4542C11961F007CCD2E /* ProductImageSelectView.swift in Sources */,
+				02E4F4502C119452007CCD2E /* MarketUploadView.swift in Sources */,
 				020118022BFDC7F200C13256 /* ImageScrollView.swift in Sources */,
 				02B729852C0F108E00C389FD /* BottomNavigationBar.swift in Sources */,
 				02FFDCFE2BE40DFE002F0DEF /* SearchView.swift in Sources */,
+				02E4F45A2C119EB3007CCD2E /* MarketUploadButton.swift in Sources */,
 				02B729832C0F0FB300C389FD /* MyPageView.swift in Sources */,
 				02A2FDF12C09827A005B0B22 /* ImageSelectView.swift in Sources */,
 				02094CC92BECA93B0098995E /* PersonalPageWork.swift in Sources */,
@@ -410,7 +431,9 @@
 				02B729762C0DC5FA00C389FD /* CategoryCapsule.swift in Sources */,
 				02E4F44A2C1057D5007CCD2E /* MarketItem.swift in Sources */,
 				0270D2FE2BE3FDB800B1B270 /* MenuView.swift in Sources */,
+				02E4F4562C119B16007CCD2E /* MarketCategoryCapsule.swift in Sources */,
 				02B7297F2C0F0F1D00C389FD /* MarketView.swift in Sources */,
+				02E4F4582C119BA1007CCD2E /* MarketCategoryView.swift in Sources */,
 				0270D2F42BE0F36500B1B270 /* MainView.swift in Sources */,
 				02FFDD002BE41184002F0DEF /* CircleImageItem.swift in Sources */,
 				02B7297A2C0DDF7D00C389FD /* ImagePicker.swift in Sources */,
@@ -426,6 +449,7 @@
 				0270D2FA2BE3F8A400B1B270 /* TabBarViewModel.swift in Sources */,
 				02E4F4482C105748007CCD2E /* MarketItemView.swift in Sources */,
 				02B729742C0DB4F600C389FD /* CustomMultiLineTextField.swift in Sources */,
+				02E4F4522C11960F007CCD2E /* ProductFeedInfoView.swift in Sources */,
 				02FFDD082BE41420002F0DEF /* ArtWorkItemView.swift in Sources */,
 				02B729782C0DD1BC00C389FD /* CategoryView.swift in Sources */,
 				020118062BFF13C300C13256 /* CateLabelView.swift in Sources */,
