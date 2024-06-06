@@ -37,7 +37,7 @@ struct ContentView: View {
             case .main:
                 return Color.black // 메인 뷰 배경색
             case .market:
-                return Color.white // 마켓 뷰 배경색
+                return Color(hex: "FFF6EE") // 마켓 뷰 배경색
             case .upload:
                 return Color(hex: "3A3532") // 업로드 뷰 배경색
             case .exhibition:

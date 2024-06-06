@@ -21,14 +21,14 @@ struct MainView: View {
                 Color(Color.black).ignoresSafeArea()
                 
                 VStack {
-                    TabBarView()
+                    TabBarView(currentBackgroundColor: Color(hex: "3A3532"))
                         .environmentObject(tabviewModel)
                     
                     Spacer()
                     
-                    SearchView()
+                    SearchView(backgroundColor: Color(hex: "3A3532"), imageColor: Color.white, hasStroke: false)
                     
-                    CategoryScrollView()
+                    CategoryScrollView(currentBackgroundColor: Color.black)
                     
                     Divider() // 기본적으로 가로 선
                         .background(Color.white) // 선의 색상을 변경

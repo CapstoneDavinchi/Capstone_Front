@@ -10,6 +10,7 @@ import SwiftUI
 struct CircleImageItem: View {
     var imageName: String
     var label: String
+    var backgroundColor: Color
 
     var body: some View {
         VStack {
@@ -21,7 +22,7 @@ struct CircleImageItem: View {
 
             Text(label) // 이미지 아래에 라벨 추가
                 .font(.caption) // 글자 크기를 캡션 스타일로 설정
-                .foregroundColor(.white)
+                .foregroundColor(backgroundColor == .black ? .white : .black)
         }
     }
 }
