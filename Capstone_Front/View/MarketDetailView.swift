@@ -1,28 +1,27 @@
 //
-//  PersonalPage.swift
+//  MarketDetailView.swift
 //  Capstone_Front
 //
-//  Created by 최유빈 on 5/9/24.
+//  Created by 최유빈 on 6/6/24.
 //
 
 import SwiftUI
 
-struct PersonalPage: View {
+struct MarketDetailView: View {
     @ObservedObject var tabviewModel = TabBarViewModel()
     
     var body: some View {
         NavigationView {
             ZStack {
-                Color.black.ignoresSafeArea()
+                Color.white.ignoresSafeArea()
                 
                 VStack(spacing: 0) {
-                    TabBarView(currentBackgroundColor: Color.black)
+                    TabBarView(currentBackgroundColor: Color.white)
                         .environmentObject(tabviewModel)
                     
-                    ImageScrollView()
-                        .frame(height: 300)
+                    ProductImage()
                     
-                    ImageDetailView()
+                    ProductInfoView()
                     
                     Spacer()
                     
@@ -41,9 +40,6 @@ struct PersonalPage: View {
     }
 }
 
-
-
-
 #Preview {
-    PersonalPage(tabviewModel: TabBarViewModel())
+    MarketDetailView()
 }
