@@ -10,40 +10,42 @@ import SwiftUI
 struct ProductInfoView: View {
     var body: some View {
         VStack (spacing: 20){
-            HStack {
-                Text("작품명")
-                    .font(.system(size: 24))
-                    .foregroundColor(.white)
-                    .background(.clear)
-                    .padding(.leading, 24)
+            VStack (spacing: 8) {
+                HStack {
+                    Text("작품명")
+                        .font(.system(size: 24))
+                        .foregroundColor(.white)
+                        .background(.clear)
+                        .padding(.leading, 24)
+                    
+                    Spacer()
+                    
+                    Text("2024/04/07")
+                        .font(.system(size: 14))
+                        .foregroundColor(.white)
+                        .background(.clear)
+                        .padding(.trailing, 24)
+                }
                 
-                Spacer()
+                HStack {
+                    Text("작가이름")
+                        .font(.system(size: 14))
+                        .foregroundColor(.white)
+                        .background(.clear)
+                        .padding(.leading, 24)
+                    
+                    Spacer()
+                }
                 
-                Text("2024/04/07")
-                    .font(.system(size: 12))
-                    .foregroundColor(.white)
-                    .background(.clear)
-                    .padding(.trailing, 24)
-            }
-            
-            HStack {
-                Text("작가이름")
-                    .font(.system(size: 12))
-                    .foregroundColor(.white)
-                    .background(.clear)
-                    .padding(.leading, 24)
-                
-                Spacer()
-            }
-            
-            HStack {
-                Text("20000원")
-                    .font(.system(size: 12))
-                    .foregroundColor(.white)
-                    .background(.clear)
-                    .padding(.leading, 24)
-                
-                Spacer()
+                HStack {
+                    Text("20000원")
+                        .font(.system(size: 12))
+                        .foregroundColor(.white)
+                        .background(.clear)
+                        .padding(.leading, 24)
+                    
+                    Spacer()
+                }
             }
             
             HStack {

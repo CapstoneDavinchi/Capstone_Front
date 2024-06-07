@@ -77,6 +77,7 @@
 		02094CCA2BECB5170098995E /* PersonalPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalPage.swift; sourceTree = "<group>"; };
 		0246996C2C12C25100CB9C1A /* ChattingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattingView.swift; sourceTree = "<group>"; };
 		0246996E2C12EE2100CB9C1A /* customBackbutton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customBackbutton.swift; sourceTree = "<group>"; };
+		024699722C1316E100CB9C1A /* Capstone-Front-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Capstone-Front-Info.plist"; sourceTree = SOURCE_ROOT; };
 		0270D2F32BE0F36500B1B270 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		0270D2F52BE0F37A00B1B270 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		0270D2F72BE0F3B400B1B270 /* ViewModelable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelable.swift; sourceTree = "<group>"; };
@@ -248,6 +249,7 @@
 		02C3198C2BCE17600030D506 /* Capstone_Front */ = {
 			isa = PBXGroup;
 			children = (
+				024699722C1316E100CB9C1A /* Capstone-Front-Info.plist */,
 				0270D2F22BDF764E00B1B270 /* ViewModel */,
 				0270D2F12BDF764500B1B270 /* View */,
 				0270D2F02BDF763600B1B270 /* Model */,
@@ -620,6 +622,7 @@
 				DEVELOPMENT_TEAM = DRD9SK8539;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Capstone-Front-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -650,6 +653,7 @@
 				DEVELOPMENT_TEAM = DRD9SK8539;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Capstone-Front-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -27,7 +27,7 @@ struct MarketDetailView: View {
                         startPoint: .top,
                         endPoint: .bottom
                 )
-                .edgesIgnoringSafeArea(.all)
+                .ignoresSafeArea()
                 
                 ScrollView {
                     VStack(spacing: 50) {

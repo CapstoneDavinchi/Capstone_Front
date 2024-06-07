@@ -9,7 +9,6 @@ import SwiftUI
 
 struct MarketView: View {
     @StateObject var tabviewModel = TabBarViewModel()
-    @StateObject var marketItemviewmodel = MarketItemViewModel()
     
     var body: some View {
         NavigationView {
@@ -17,7 +16,6 @@ struct MarketView: View {
                 NavigationLink(destination: PersonalPage(tabviewModel: tabviewModel), isActive: $tabviewModel.showPersonalPage) {
                     EmptyView()
                 }
-                
                 Color(hex: "FFF6EE").ignoresSafeArea()
                 
                 VStack {
@@ -27,22 +25,6 @@ struct MarketView: View {
                     SearchView(backgroundColor: Color.clear, imageColor: Color(hex: "292929"), hasStroke: true)
                     
                     CategoryScrollView(currentBackgroundColor: Color(hex: "FFF6EE"))
-                    
-                    Divider() // 기본적으로 가로 선
-                        .background(Color.black) // 선의 색상을 변경
-                        .frame(height: 1)
-                        .padding(.horizontal, 12)
-                    
-                    MarketItemsGridView(viewModel: marketItemviewmodel)
-                }
-                
-                VStack {
-                    Spacer()
-                    HStack {
-                        Spacer()
-                        MarketUploadButton() // 여기에 UploadButton 구현
-                            .padding(16) // 우측 하단에 적당한 간격을 두기
-                    }
                 }
             }
         }
