@@ -9,12 +9,14 @@ import SwiftUI
 
 struct customBackbutton: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    var action: (() -> Void)? = nil
     var buttoncolor: Color
     
     var body: some View {
             ZStack {
                 Button{
                     self.presentationMode.wrappedValue.dismiss()
+                    self.action?()
                 } label: {
                     Image(systemName: "chevron.left")
                         .resizable()
@@ -26,6 +28,6 @@ struct customBackbutton: View {
         }
 }
 
-#Preview {
-    customBackbutton(buttoncolor: Color.black)
-}
+//#Preview {
+//    customBackbutton(buttoncolor: Color.black)
+//}

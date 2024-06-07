@@ -9,9 +9,12 @@ import SwiftUI
 
 struct MarketItemView: View {
     var marketItem: MarketItem
+    @Binding var showBottomNavBar: Bool
 
     var body: some View {
-        NavigationLink(destination: MarketDetailView()) {
+        NavigationLink(destination: MarketDetailView(showBottomNavBar: $showBottomNavBar).onAppear {
+            showBottomNavBar = false
+        }) {
             VStack(alignment: .leading, spacing: 8) { // 수직 정렬 및 간격 설정
                 Image(marketItem.imageName)
                     .resizable()

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MarketUploadView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    @Binding var showBottomNavBar: Bool
     
     var body: some View {
         NavigationView {
@@ -30,10 +31,10 @@ struct MarketUploadView: View {
             }
         }
         .navigationBarBackButtonHidden(true)
-        .navigationBarItems(leading: customBackbutton(buttoncolor: Color(hex: "292929")))
+        .navigationBarItems(leading: customBackbutton(action: {showBottomNavBar = true }, buttoncolor: Color(hex: "292929")))
     }
 }
 
-#Preview {
-    MarketUploadView()
-}
+//#Preview {
+//    MarketUploadView()
+//}

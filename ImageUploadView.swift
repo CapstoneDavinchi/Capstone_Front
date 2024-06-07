@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ImageUploadView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    @Binding var showBottomNavBar: Bool
     
     var body: some View {
         NavigationView {
@@ -30,10 +31,10 @@ struct ImageUploadView: View {
             }
         }
         .navigationBarBackButtonHidden(true)
-        .navigationBarItems(leading: customBackbutton(buttoncolor: Color.white))
+        .navigationBarItems(leading: customBackbutton(action: { showBottomNavBar = false }, buttoncolor: Color.white))
     }
 }
 
-#Preview {
-    ImageUploadView()
-}
+//#Preview {
+//    ImageUploadView()
+//}

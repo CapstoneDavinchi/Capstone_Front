@@ -10,18 +10,19 @@ import SwiftUI
 struct MarketView: View {
     @StateObject var tabviewModel = TabBarViewModel()
     @StateObject var marketItemviewmodel = MarketItemViewModel()
+    @Binding var showBottomNavBar: Bool
     
     var body: some View {
         NavigationView {
             ZStack {
-                NavigationLink(destination: PersonalPage(tabviewModel: tabviewModel), isActive: $tabviewModel.showPersonalPage) {
+                NavigationLink(destination: PersonalPage(tabviewModel: tabviewModel, showBottomNavBar: $showBottomNavBar), isActive: $tabviewModel.showPersonalPage) {
                     EmptyView()
                 }
                 
                 Color(hex: "FFF6EE").ignoresSafeArea()
                 
                 VStack {
-                    TabBarView(currentBackgroundColor: Color(hex: "FFF6EE"))
+                    TabBarView(currentBackgroundColor: Color(hex: "FFF6EE"), showBottomNavBar: $showBottomNavBar)
                         .environmentObject(tabviewModel)
                     
                     SearchView(backgroundColor: Color.clear, imageColor: Color(hex: "292929"), hasStroke: true)
@@ -33,14 +34,14 @@ struct MarketView: View {
                         .frame(height: 1)
                         .padding(.horizontal, 12)
                     
-                    MarketItemsGridView(viewModel: marketItemviewmodel)
+                    MarketItemsGridView(viewModel: marketItemviewmodel, showBottomNavBar: $showBottomNavBar)
                 }
                 
                 VStack {
                     Spacer()
                     HStack {
                         Spacer()
-                        MarketUploadButton() // 여기에 UploadButton 구현
+                        MarketUploadButton(showBottomNavBar: $showBottomNavBar) // 여기에 UploadButton 구현
                             .padding(16) // 우측 하단에 적당한 간격을 두기
                     }
                 }
@@ -50,5 +51,5 @@ struct MarketView: View {
 }
 
 #Preview {
-    MarketView()
+    MarketView(showBottomNavBar: .constant(true))
 }
