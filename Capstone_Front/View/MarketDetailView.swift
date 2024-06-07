@@ -39,17 +39,25 @@ struct MarketDetailView: View {
                         
                         ProductInfoView()
                         
-                        HStack {
-                            Spacer()
-                            
-                            // UploadButton을 NavigationLink로 감싸 이동하도록 설정
-                            NavigationLink(destination: ChattingView().environmentObject(tabviewModel)) {
-                                ChatButton()
-                            }
-                            .padding(.trailing, 24)
-                        }
+                        Spacer()
+                        
                     }
                 }
+                
+                HStack {
+                    Spacer()
+                    
+                    VStack {
+                        Spacer()
+                        
+                        // UploadButton을 NavigationLink로 감싸 이동하도록 설정
+                        NavigationLink(destination: ChattingView().environmentObject(tabviewModel)) {
+                            ChatButton()
+                        }
+                    }
+                    .padding(.bottom, 16)
+                }
+                .padding(.trailing, 24)
             }
         }
         .navigationBarBackButtonHidden(true)
