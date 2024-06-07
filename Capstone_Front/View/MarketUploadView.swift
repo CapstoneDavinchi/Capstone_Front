@@ -10,20 +10,6 @@ import SwiftUI
 struct MarketUploadView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
-    var backButton : some View {
-        ZStack {
-            Button{
-                self.presentationMode.wrappedValue.dismiss()
-            } label: {
-                Image(systemName: "chevron.left")
-                    .resizable()
-                    .frame(width: 7, height: 13)
-                    .foregroundColor(Color(hex: "292929"))
-            }
-        }
-        .frame(width: 32, height: 32)
-    }
-    
     var body: some View {
         NavigationView {
             ZStack {
@@ -44,7 +30,7 @@ struct MarketUploadView: View {
             }
         }
         .navigationBarBackButtonHidden(true)
-        .navigationBarItems(leading: backButton)
+        .navigationBarItems(leading: customBackbutton(buttoncolor: Color(hex: "292929")))
     }
 }
 

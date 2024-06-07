@@ -23,19 +23,28 @@ struct ProductInfoView: View {
                     .font(.system(size: 12))
                     .foregroundColor(.white)
                     .background(.clear)
+                    .padding(.trailing, 24)
             }
             
-            Text("2024/04/07")
-                .font(.system(size: 12))
-                .foregroundColor(.white)
-                .background(.clear)
-                .padding(.leading, 24)
+            HStack {
+                Text("작가이름")
+                    .font(.system(size: 12))
+                    .foregroundColor(.white)
+                    .background(.clear)
+                    .padding(.leading, 24)
+                
+                Spacer()
+            }
             
-            Text("20000원")
-                .font(.system(size: 12))
-                .foregroundColor(.white)
-                .background(.clear)
-                .padding(.leading, 24)
+            HStack {
+                Text("20000원")
+                    .font(.system(size: 12))
+                    .foregroundColor(.white)
+                    .background(.clear)
+                    .padding(.leading, 24)
+                
+                Spacer()
+            }
             
             HStack {
                 CateLabelView(category: "유화")

@@ -16,6 +16,8 @@
 		02094CC72BECA6130098995E /* AlbumShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02094CC62BECA6130098995E /* AlbumShape.swift */; };
 		02094CC92BECA93B0098995E /* PersonalPageWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02094CC82BECA93B0098995E /* PersonalPageWork.swift */; };
 		02094CCB2BECB5170098995E /* PersonalPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02094CCA2BECB5170098995E /* PersonalPage.swift */; };
+		0246996D2C12C25100CB9C1A /* ChattingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0246996C2C12C25100CB9C1A /* ChattingView.swift */; };
+		0246996F2C12EE2100CB9C1A /* customBackbutton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0246996E2C12EE2100CB9C1A /* customBackbutton.swift */; };
 		0270D2F42BE0F36500B1B270 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0270D2F32BE0F36500B1B270 /* MainView.swift */; };
 		0270D2F62BE0F37A00B1B270 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0270D2F52BE0F37A00B1B270 /* MainViewModel.swift */; };
 		0270D2F82BE0F3B400B1B270 /* ViewModelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0270D2F72BE0F3B400B1B270 /* ViewModelable.swift */; };
@@ -50,6 +52,7 @@
 		02E4F45C2C11A86E007CCD2E /* MarketDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E4F45B2C11A86E007CCD2E /* MarketDetailView.swift */; };
 		02E4F45E2C11A8F7007CCD2E /* ProductInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E4F45D2C11A8F7007CCD2E /* ProductInfoView.swift */; };
 		02E4F4602C11AD7E007CCD2E /* ProductImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E4F45F2C11AD7E007CCD2E /* ProductImage.swift */; };
+		02E4F4622C12BF27007CCD2E /* ChatButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E4F4612C12BF27007CCD2E /* ChatButton.swift */; };
 		02E7F6412C086F8900C6EF03 /* ImageUploadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E7F6402C086F8900C6EF03 /* ImageUploadView.swift */; };
 		02FFDCFE2BE40DFE002F0DEF /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FFDCFD2BE40DFE002F0DEF /* SearchView.swift */; };
 		02FFDD002BE41184002F0DEF /* CircleImageItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FFDCFF2BE41184002F0DEF /* CircleImageItem.swift */; };
@@ -72,6 +75,8 @@
 		02094CC62BECA6130098995E /* AlbumShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumShape.swift; sourceTree = "<group>"; };
 		02094CC82BECA93B0098995E /* PersonalPageWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalPageWork.swift; sourceTree = "<group>"; };
 		02094CCA2BECB5170098995E /* PersonalPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalPage.swift; sourceTree = "<group>"; };
+		0246996C2C12C25100CB9C1A /* ChattingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattingView.swift; sourceTree = "<group>"; };
+		0246996E2C12EE2100CB9C1A /* customBackbutton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customBackbutton.swift; sourceTree = "<group>"; };
 		0270D2F32BE0F36500B1B270 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		0270D2F52BE0F37A00B1B270 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		0270D2F72BE0F3B400B1B270 /* ViewModelable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelable.swift; sourceTree = "<group>"; };
@@ -107,6 +112,7 @@
 		02E4F45B2C11A86E007CCD2E /* MarketDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDetailView.swift; sourceTree = "<group>"; };
 		02E4F45D2C11A8F7007CCD2E /* ProductInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductInfoView.swift; sourceTree = "<group>"; };
 		02E4F45F2C11AD7E007CCD2E /* ProductImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductImage.swift; sourceTree = "<group>"; };
+		02E4F4612C12BF27007CCD2E /* ChatButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatButton.swift; sourceTree = "<group>"; };
 		02E7F6402C086F8900C6EF03 /* ImageUploadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploadView.swift; sourceTree = SOURCE_ROOT; };
 		02FFDCFD2BE40DFE002F0DEF /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		02FFDCFF2BE41184002F0DEF /* CircleImageItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImageItem.swift; sourceTree = "<group>"; };
@@ -146,6 +152,7 @@
 				02B729732C0DB4F600C389FD /* CustomMultiLineTextField.swift */,
 				02FFDCFF2BE41184002F0DEF /* CircleImageItem.swift */,
 				02B729842C0F108E00C389FD /* BottomNavigationBar.swift */,
+				0246996E2C12EE2100CB9C1A /* customBackbutton.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -274,6 +281,8 @@
 				02E4F4592C119EB3007CCD2E /* MarketUploadButton.swift */,
 				02E4F45D2C11A8F7007CCD2E /* ProductInfoView.swift */,
 				02E4F45F2C11AD7E007CCD2E /* ProductImage.swift */,
+				02E4F4612C12BF27007CCD2E /* ChatButton.swift */,
+				0246996C2C12C25100CB9C1A /* ChattingView.swift */,
 			);
 			path = Market;
 			sourceTree = "<group>";
@@ -435,6 +444,7 @@
 				02E4F45A2C119EB3007CCD2E /* MarketUploadButton.swift in Sources */,
 				02B729832C0F0FB300C389FD /* MyPageView.swift in Sources */,
 				02A2FDF12C09827A005B0B22 /* ImageSelectView.swift in Sources */,
+				02E4F4622C12BF27007CCD2E /* ChatButton.swift in Sources */,
 				02094CC92BECA93B0098995E /* PersonalPageWork.swift in Sources */,
 				02E4F44E2C105A0A007CCD2E /* MarketItemsGridView.swift in Sources */,
 				02B729762C0DC5FA00C389FD /* CategoryCapsule.swift in Sources */,
@@ -462,9 +472,11 @@
 				02E4F4522C11960F007CCD2E /* ProductFeedInfoView.swift in Sources */,
 				02FFDD082BE41420002F0DEF /* ArtWorkItemView.swift in Sources */,
 				02B729782C0DD1BC00C389FD /* CategoryView.swift in Sources */,
+				0246996F2C12EE2100CB9C1A /* customBackbutton.swift in Sources */,
 				02E4F45E2C11A8F7007CCD2E /* ProductInfoView.swift in Sources */,
 				020118062BFF13C300C13256 /* CateLabelView.swift in Sources */,
 				020118082BFF16ED00C13256 /* ReactionView.swift in Sources */,
+				0246996D2C12C25100CB9C1A /* ChattingView.swift in Sources */,
 				02E4F44C2C10598D007CCD2E /* MarketItemViewModel.swift in Sources */,
 				02FFDD062BE413C9002F0DEF /* ArtWorksViewModel.swift in Sources */,
 				02094CC72BECA6130098995E /* AlbumShape.swift in Sources */,
