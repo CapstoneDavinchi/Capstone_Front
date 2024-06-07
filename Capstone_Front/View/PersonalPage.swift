@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct PersonalPage: View {
-    @State private var selectedPage = 0
     @ObservedObject var tabviewModel = TabBarViewModel()
     
     var body: some View {

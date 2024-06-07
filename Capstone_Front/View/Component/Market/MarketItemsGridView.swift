@@ -12,7 +12,7 @@ struct MarketItemsGridView: View {
 
     var body: some View {
         ScrollView {
-            LazyVGrid(columns: [GridItem(), GridItem()]) { // 3열 그리드
+            LazyVGrid(columns: [GridItem(), GridItem()]) { // 2열 그리드
                 ForEach(viewModel.marketItems.indices, id: \.self) { index in
                     MarketItemView(marketItem: viewModel.marketItems[index]) // 각 아이템 표시
                 }

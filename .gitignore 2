@@ -2,4 +2,3 @@ Capstone_Front.xcworkspace/xcuserdata/
 *.log
 build/
 node_modules/
-.DS_Store

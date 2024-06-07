@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     @State var selectedTab: Tab = .main
+    @State var showBottomBar: Bool = true
+    
     var body: some View {
         ZStack {
             currentBackgroundColor.edgesIgnoringSafeArea(.all)
@@ -28,7 +30,9 @@ struct ContentView: View {
                     MyPageView()
                 }
                 Spacer()
-                BottomNavigationBar(selectedTab: $selectedTab, currentBackgroundColor: currentBackgroundColor)
+                if showBottomBar {
+                    BottomNavigationBar(selectedTab: $selectedTab, currentBackgroundColor: currentBackgroundColor)
+                }
             }
         }
     }

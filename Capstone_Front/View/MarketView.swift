@@ -17,6 +17,7 @@ struct MarketView: View {
                 NavigationLink(destination: PersonalPage(tabviewModel: tabviewModel), isActive: $tabviewModel.showPersonalPage) {
                     EmptyView()
                 }
+                
                 Color(hex: "FFF6EE").ignoresSafeArea()
                 
                 VStack {
