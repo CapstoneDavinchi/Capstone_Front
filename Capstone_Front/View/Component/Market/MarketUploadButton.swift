@@ -8,8 +8,12 @@
 import SwiftUI
 
 struct MarketUploadButton: View {
+    @Binding var showBottomNavBar: Bool
+    
     var body: some View {
-        NavigationLink(destination: MarketUploadView()) {
+        NavigationLink(destination: MarketUploadView(showBottomNavBar: $showBottomNavBar).onAppear {
+            showBottomNavBar = false
+        }) {
             HStack(spacing: 8) {
                 Image(systemName: "plus")
                     .resizable()
@@ -29,6 +33,6 @@ struct MarketUploadButton: View {
 }
 
 #Preview {
-    MarketUploadButton()
+    MarketUploadButton(showBottomNavBar: .constant(false))
 }
 

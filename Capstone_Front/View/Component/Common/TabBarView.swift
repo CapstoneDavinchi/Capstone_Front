@@ -10,6 +10,7 @@ import SwiftUI
 struct TabBarView: View {
     @EnvironmentObject var viewModel: TabBarViewModel
     var currentBackgroundColor: Color
+    @Binding var showBottomNavBar: Bool
     
     private func isDarkBackground(_ color: Color) -> Bool {
            color == Color.black || color == Color(hex: "3A3532")
@@ -23,6 +24,8 @@ struct TabBarView: View {
                     // PersonalPage가 활성화 되어 있을 때 뒤로 가기 버튼
                     Button(action: {
                         viewModel.showPersonalPage = false
+                        
+                        showBottomNavBar = true
                     }) {
                         Image(systemName: "chevron.left")
                             .resizable()
@@ -33,6 +36,7 @@ struct TabBarView: View {
                     // PersonalPage가 비활성화 되어 있을 때 프로필 버튼
                     Button(action: {
                         viewModel.showPersonalPage = true
+                        showBottomNavBar = false
                     }) {
                         Image("Profile")
                             .resizable()

@@ -9,14 +9,16 @@ import SwiftUI
 
 struct PersonalPage: View {
     @ObservedObject var tabviewModel = TabBarViewModel()
+    @Binding var showBottomNavBar: Bool
     
     var body: some View {
+        
         NavigationView {
             ZStack {
                 Color.black.ignoresSafeArea()
                 
                 VStack(spacing: 0) {
-                    TabBarView(currentBackgroundColor: Color.black)
+                    TabBarView(currentBackgroundColor: Color.black, showBottomNavBar: $showBottomNavBar)
                         .environmentObject(tabviewModel)
                     
                     ImageScrollView()
@@ -30,8 +32,8 @@ struct PersonalPage: View {
                         Spacer()
                         
                         // UploadButton을 NavigationLink로 감싸 이동하도록 설정
-                        NavigationLink(destination: ImageUploadView().environmentObject(tabviewModel)) {
-                            UploadButton()
+                        NavigationLink(destination: ImageUploadView(showBottomNavBar: $showBottomNavBar).environmentObject(tabviewModel)) {
+                            UploadButton(showBottomNavBar: $showBottomNavBar)
                         }
                         .padding(.trailing, 24)
                     }
@@ -45,5 +47,5 @@ struct PersonalPage: View {
 
 
 #Preview {
-    PersonalPage(tabviewModel: TabBarViewModel())
+    PersonalPage(tabviewModel: TabBarViewModel(), showBottomNavBar: .constant(false))
 }

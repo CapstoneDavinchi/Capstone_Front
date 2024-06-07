@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MarketDetailView: View {
     @ObservedObject var tabviewModel = TabBarViewModel()
+    @Binding var showBottomNavBar: Bool
     
     var body: some View {
         NavigationView {
@@ -52,10 +53,10 @@ struct MarketDetailView: View {
             }
         }
         .navigationBarBackButtonHidden(true)
-        .navigationBarItems(leading: customBackbutton(buttoncolor: Color(hex: "3A3532")))
+        .navigationBarItems(leading: customBackbutton(action: {showBottomNavBar = true}, buttoncolor: Color(hex: "3A3532")))
     }
 }
 
-#Preview {
-    MarketDetailView()
-}
+//#Preview {
+//    MarketDetailView()
+//}

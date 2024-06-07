@@ -8,8 +8,11 @@
 import SwiftUI
 
 struct UploadButton: View {
+    @Binding var showBottomNavBar: Bool
     var body: some View {
-        NavigationLink(destination: ImageUploadView()) {
+        NavigationLink(destination: ImageUploadView(showBottomNavBar: $showBottomNavBar).onAppear {
+            showBottomNavBar = false
+        }) {
             HStack(spacing: 8) {
                 Image(systemName: "pencil")
                     .resizable()
@@ -28,6 +31,6 @@ struct UploadButton: View {
     }
 }
 
-#Preview {
-    UploadButton()
-}
+//#Preview {
+//    UploadButton()
+//}

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State var selectedTab: Tab = .main
-    @State var showBottomBar: Bool = true
+    @State private var showBottomNavBar: Bool = true // BNB 표시 상태변수
     
     var body: some View {
         ZStack {
@@ -19,18 +19,18 @@ struct ContentView: View {
                 Spacer()
                 switch selectedTab {
                 case .main:
-                    MainView()
+                    MainView(showBottomNavBar: $showBottomNavBar)
                 case .market:
-                    MarketView()
+                    MarketView(showBottomNavBar: $showBottomNavBar)
                 case .upload:
-                    ImageUploadView()
+                    ImageUploadView(showBottomNavBar: $showBottomNavBar)
                 case .exhibition:
                     ExhibitionView()
                 case .mypage:
                     MyPageView()
                 }
                 Spacer()
-                if showBottomBar {
+                if showBottomNavBar {
                     BottomNavigationBar(selectedTab: $selectedTab, currentBackgroundColor: currentBackgroundColor)
                 }
             }

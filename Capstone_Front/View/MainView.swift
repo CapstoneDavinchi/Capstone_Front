@@ -10,18 +10,19 @@ import SwiftUI
 struct MainView: View {
     @StateObject var tabviewModel = TabBarViewModel()
     @StateObject var ArtWorkviewModel = ArtworksViewModel()
+    @Binding var showBottomNavBar: Bool
     
     var body: some View {
         NavigationView {
             ZStack{
-                NavigationLink(destination: PersonalPage(tabviewModel: tabviewModel), isActive: $tabviewModel.showPersonalPage) {
+                NavigationLink(destination: PersonalPage(tabviewModel: tabviewModel, showBottomNavBar: $showBottomNavBar), isActive: $tabviewModel.showPersonalPage) {
                     EmptyView()
                 }
                 
                 Color(Color.black).ignoresSafeArea()
                 
                 VStack {
-                    TabBarView(currentBackgroundColor: Color(hex: "3A3532"))
+                    TabBarView(currentBackgroundColor: Color(hex: "3A3532"), showBottomNavBar: $showBottomNavBar)
                         .environmentObject(tabviewModel)
                     
                     Spacer()
@@ -47,19 +48,11 @@ struct MainView: View {
                     ) : AnyView(EmptyView())
                 )
                 
-                VStack {
-                    Spacer()
-                    HStack {
-                        Spacer()
-                        UploadButton() // 여기에 UploadButton 구현
-                            .padding(16) // 우측 하단에 적당한 간격을 두기
-                    }
-                }
             }
         }
     }
 }
 
-#Preview {
-    MainView()
-}
+//#Preview {
+//    MainView()
+//}
