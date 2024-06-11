@@ -9,5 +9,8 @@ target 'Capstone_Front' do
   # Pods for Capstone_Front
    pod 'Kingfisher', '~> 7.0'
    pod 'Alamofire'
+   pod 'KakaoSDKAuth'
+   pod 'KakaoSDKCommon'
+   pod 'KakaoSDKUser'
 
 end
