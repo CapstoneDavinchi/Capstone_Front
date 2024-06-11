@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ProductImageSelectView: View {
     @State private var openPhoto = false
+    @State private var image: UIImage?
     
     var body: some View {
         Button(action: {
@@ -32,7 +33,7 @@ struct ProductImageSelectView: View {
         .background(Color(hex: "FFF6EE"))
         .cornerRadius(10)
         .sheet(isPresented: $openPhoto, content: {
-            ImagePicker(sourceType: .photoLibrary)
+            ImagePicker(sourceType: .photoLibrary, selectedImage: self.$image)
         })
     }
 }

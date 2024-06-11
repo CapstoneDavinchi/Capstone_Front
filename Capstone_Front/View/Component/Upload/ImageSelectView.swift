@@ -9,30 +9,39 @@ import SwiftUI
 
 struct ImageSelectView: View {
     @State private var openPhoto = false
+    @State private var image: UIImage?
     
     var body: some View {
         Button(action: {
             self.openPhoto = true
         }, label: {
-            ZStack {
-                RoundedRectangle(cornerRadius: 10)
-                    .fill(LinearGradient(gradient: Gradient(colors: [Color(hex: "3A3532"), Color(hex: "FFFFC1").opacity(0.4)]), startPoint: .top, endPoint: .bottom))
+            if let image = image {
+                Image(uiImage: image)
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
                     .frame(width: 110, height: 110)
-                
-                RoundedRectangle(cornerRadius: 10)
-                    .stroke(Color(hex: "D9D9D9").opacity(0.4), lineWidth: 2.5)
-                    .frame(width: 110, height: 110)
-                
-                Image(systemName: "camera.fill")
-                    .font(.system(size: 32))
-                    .foregroundColor(.white)
+                    .cornerRadius(10)
+            } else {
+                ZStack {
+                    RoundedRectangle(cornerRadius: 10)
+                        .fill(LinearGradient(gradient: Gradient(colors: [Color(hex: "3A3532"), Color(hex: "FFFFC1").opacity(0.4)]), startPoint: .top, endPoint: .bottom))
+                        .frame(width: 110, height: 110)
+                                
+                    RoundedRectangle(cornerRadius: 10)
+                        .stroke(Color(hex: "D9D9D9").opacity(0.4), lineWidth: 2.5)
+                        .frame(width: 110, height: 110)
+                        
+                    Image(systemName: "camera.fill")
+                        .font(.system(size: 32))
+                        .foregroundColor(.white)
+                }
             }
         })
         .frame(width: 110, height: 110)
         .background(Color(hex: "3A3532"))
         .cornerRadius(10)
         .sheet(isPresented: $openPhoto, content: {
-            ImagePicker(sourceType: .photoLibrary)
+            ImagePicker(sourceType: .photoLibrary, selectedImage: self.$image)
         })
     }
 }
