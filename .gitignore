@@ -3,3 +3,4 @@ Capstone_Front.xcworkspace/xcuserdata/
 build/
 node_modules/
 .DS_Store
+*.xcconfig
