@@ -38,8 +38,10 @@ struct KakaoLoginButton: View{
 
     private func handleLoginResult(oauthToken: OAuthToken?, error: Error?) {
         if let error = error {
+            print("에러에러")
             print(error)
         } else if oauthToken != nil {
+            print("성공")
             isLoggedIn = true // 로그인 성공 상태 업데이트
         }
     }

@@ -38,9 +38,16 @@ struct TabBarView: View {
                         viewModel.showPersonalPage = true
                         showBottomNavBar = false
                     }) {
-                        Image("Profile")
-                            .resizable()
-                            .frame(width: 32, height: 32)
+                        if let image = viewModel.profileImage {
+                            Image(uiImage: image)
+                                .resizable()
+                                .frame(width: 32, height: 32)
+                                .cornerRadius(16)
+                        } else {
+                            Image("Profile")
+                                .resizable()
+                                .frame(width: 32, height: 32)
+                        }
                     }
                 }
             }

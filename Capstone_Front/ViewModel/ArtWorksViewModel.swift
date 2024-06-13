@@ -9,15 +9,15 @@ import SwiftUI
 
 class ArtworksViewModel: ObservableObject {
     @Published var artworks: [Artwork] = [
-        Artwork(imageName: "ArtWork", title: "작품명1", authorProfile: "Profile", authorName: "Sample_account", description: "작품 설명"),
-        Artwork(imageName: "ArtWork", title: "작품명2", authorProfile: "Profile", authorName: "Sample_account", description: "작품 설명"),
-        Artwork(imageName: "ArtWork", title: "작품명3", authorProfile: "Profile", authorName: "Sample_account", description: "작품 설명"),
-        Artwork(imageName: "ArtWork", title: "작품명1", authorProfile: "Profile", authorName: "Sample_account", description: "작품 설명"),
-        Artwork(imageName: "ArtWork", title: "작품명2", authorProfile: "Profile", authorName: "Sample_account", description: "작품 설명"),
-        Artwork(imageName: "ArtWork", title: "작품명3", authorProfile: "Profile", authorName: "Sample_account", description: "작품 설명"),
-        Artwork(imageName: "ArtWork", title: "작품명1", authorProfile: "Profile", authorName: "Sample_account", description: "작품 설명"),
-        Artwork(imageName: "ArtWork", title: "작품명2", authorProfile: "Profile", authorName: "Sample_account", description: "작품 설명"),
-        Artwork(imageName: "ArtWork", title: "작품명3", authorProfile: "Profile", authorName: "Sample_account", description: "작품 설명"),
+        Artwork(imageName: "ArtWork", title: "천국", authorProfile: "Profile", authorName: "youbeen", description: "천국을 표현했다"),
+        Artwork(imageName: "ArtWork", title: "천국", authorProfile: "Profile", authorName: "youbeen", description: "천국을 표현했다"),
+        Artwork(imageName: "ArtWork", title: "천국", authorProfile: "Profile", authorName: "youbeen", description: "천국을 표현했다"),
+        Artwork(imageName: "ArtWork", title: "천국", authorProfile: "Profile", authorName: "youbeen", description: "천국을 표현했다"),
+        Artwork(imageName: "ArtWork", title: "천국", authorProfile: "Profile", authorName: "youbeen", description: "천국을 표현했다"),
+        Artwork(imageName: "ArtWork", title: "천국", authorProfile: "Profile", authorName: "youbeen", description: "천국을 표현했다"),
+        Artwork(imageName: "ArtWork", title: "천국", authorProfile: "Profile", authorName: "youbeen", description: "천국을 표현했다"),
+        Artwork(imageName: "ArtWork", title: "천국", authorProfile: "Profile", authorName: "youbeen", description: "천국을 표현했다"),
+        Artwork(imageName: "ArtWork", title: "천국", authorProfile: "Profile", authorName: "youbeen", description: "천국을 표현했다"),
         // 필요한 만큼 추가
     ]
 
