@@ -8,7 +8,11 @@
 import SwiftUI
 
 struct FirstUserInfoPage: View {
+    @StateObject private var tabBarViewModel = TabBarViewModel()
     @State private var nicknameText = ""
+    @State private var showSecondUserInfoPage = false
+    @State private var checkDuplicate = false
+        
     var body: some View {
         ZStack {
             Image("UserInfoBack")
@@ -27,7 +31,7 @@ struct FirstUserInfoPage: View {
                 }
                 .padding(.top, 50)
                 
-                ProfileImageSelectView()
+                ProfileImageSelectView(tabBarViewModel: tabBarViewModel)
                     .padding(.top, 60)
                 
                 HStack (spacing: 16) {
@@ -39,10 +43,10 @@ struct FirstUserInfoPage: View {
                         )
                         .frame(height: 40)
                         .padding(.leading, 24)
-
+                    
                     
                     Button(action: {
-                        print("중복 체크 완료")
+                        self.checkDuplicate = true
                     }, label: {
                         HStack {
                             Text("중복 체크")
@@ -55,13 +59,26 @@ struct FirstUserInfoPage: View {
                         .cornerRadius(10) // 모서리 둥글게
                     })
                     .padding(.trailing, 24)
+                    
+
                 }
                 .padding(.top, 40)
+                
+                HStack {
+                    if checkDuplicate {
+                        Text("사용 가능한 닉네임입니다.")
+                            .font(.system(size: 10))
+                            .foregroundColor(.white)
+                            .padding(.leading, 30)
+                    }
+                    
+                    Spacer()
+                }
                 
                 Spacer()
                 
                 Button(action: {
-                    print("다음")
+                    self.showSecondUserInfoPage = true
                 }, label: {
                     HStack {
                         Text("다음")
@@ -73,6 +90,9 @@ struct FirstUserInfoPage: View {
                     .background(Color.white) // 배경색
                     .cornerRadius(10) // 모서리 둥글게
                 })
+                .fullScreenCover(isPresented: $showSecondUserInfoPage) {
+                    SecondUserInfoPage()
+                }
             }
         }
     }

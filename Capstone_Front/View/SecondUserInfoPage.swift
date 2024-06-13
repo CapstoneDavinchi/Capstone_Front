@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct SecondUserInfoPage: View {
+    @State private var showContentView = false
+    
     var body: some View {
         ZStack {
             Image("UserInfoBack")
                 .resizable()
                 .ignoresSafeArea()
-            
+                
             VStack {
                 HStack {
                     Text("미술 취향을 선택해주세요")
@@ -21,23 +23,23 @@ struct SecondUserInfoPage: View {
                         .fontWeight(.bold)
                         .foregroundColor(.white)
                         .padding(.leading, 24)
-                    
+                        
                     Spacer()
                 }
                 .padding(.top, 50)
-                
+                    
                 CategoryView()
                     .padding(.top, 50)
-                
+                    
                 Spacer()
-                
+                    
                 Text("갤러리 Davinci에 방문하신 관람객 여러분, 환영합니다.")
                     .font(.system(size: 13))
                     .fontWeight(.bold)
                     .foregroundColor(.white)
-                
+                    
                 Button(action: {
-                    print("다음")
+                    self.showContentView = true
                 }, label: {
                     HStack {
                         Text("다음")
@@ -50,7 +52,10 @@ struct SecondUserInfoPage: View {
                     .cornerRadius(10) // 모서리 둥글게
                 })
                 .padding(.top, 10)
-                
+                .fullScreenCover(isPresented: $showContentView) {
+                    ContentView()
+                }
+    
             }
         }
     }

@@ -28,6 +28,7 @@ struct LoginPage: View {
                 VStack (spacing: 110) {
                     Text("미술 작품 공유 플랫폼 Davinci")
                         .font(.system(size: 15))
+                        .fontWeight(.bold)
                         .foregroundColor(.white)
                     
                     VStack (spacing: 10){
@@ -38,7 +39,7 @@ struct LoginPage: View {
             }
         }
         .fullScreenCover(isPresented: $isLoggedIn) { // 로그인 성공 시 ContentView 표시
-            ContentView()
+            FirstUserInfoPage()
         }
     }
 }

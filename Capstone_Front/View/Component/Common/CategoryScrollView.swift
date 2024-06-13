@@ -11,15 +11,15 @@ import SwiftUI
 struct CategoryScrollView: View {
     var currentBackgroundColor: Color
     var items: [(String, String)] = [
-            ("image1", "Label1"),
-            ("image2", "Label2"),
-            ("image3", "Label3"),
-            ("image4", "Label4"),
-            ("image5", "Label5"),
-            ("image6", "Label6"),
-            ("image7", "Label7"),
-            ("image8", "Label8"),
-            ("image9", "Label9"),
+            ("image1", "전체"),
+            ("image2", "유화"),
+            ("image3", "수채화"),
+            ("image4", "아크릴화"),
+            ("image5", "수묵화"),
+            ("image6", "채색화"),
+            ("image7", "벽화"),
+            ("image8", "판화"),
+            ("image9", "콜라쥬"),
             // 필요에 따라 아이템 추가
         ]
 
