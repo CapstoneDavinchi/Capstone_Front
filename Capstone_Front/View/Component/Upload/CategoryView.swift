@@ -18,16 +18,18 @@ struct CategoryView: View {
             // 각 행마다 카테고리 그룹을 만듭니다
             let rows = categories.chunked(into: numberOfButtonsInRow)
 
-            VStack(alignment: .leading) {
+            VStack(alignment: .center, spacing: 10) {
                 ForEach(rows, id: \.self) { row in
                     HStack {
+                        Spacer()
                         ForEach(row, id: \.self) { category in
                             CategoryCapsule(category: category)
                         }
+                        Spacer()
                     }
                 }
             }
-            .padding(.leading, 24)
+            .padding(.horizontal, buttonSpacing / 2) 
         }
     }
 }

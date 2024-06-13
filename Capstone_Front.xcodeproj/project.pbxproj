@@ -42,6 +42,9 @@
 		02C319952BCE17620030D506 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02C319942BCE17620030D506 /* Preview Assets.xcassets */; };
 		02CCB3122C17FA4F005BACB8 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CCB3112C17FA4F005BACB8 /* LoginPage.swift */; };
 		02CCB3152C1805CB005BACB8 /* KakaoLoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CCB3142C1805CB005BACB8 /* KakaoLoginButton.swift */; };
+		02CCB31D2C1961FE005BACB8 /* FirstUserInfoPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CCB31C2C1961FE005BACB8 /* FirstUserInfoPage.swift */; };
+		02CCB31F2C1963BD005BACB8 /* ProfileImageSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CCB31E2C1963BD005BACB8 /* ProfileImageSelectView.swift */; };
+		02CCB3212C1AA882005BACB8 /* SecondUserInfoPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CCB3202C1AA882005BACB8 /* SecondUserInfoPage.swift */; };
 		02E4F4482C105748007CCD2E /* MarketItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E4F4472C105748007CCD2E /* MarketItemView.swift */; };
 		02E4F44A2C1057D5007CCD2E /* MarketItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E4F4492C1057D5007CCD2E /* MarketItem.swift */; };
 		02E4F44C2C10598D007CCD2E /* MarketItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E4F44B2C10598D007CCD2E /* MarketItemViewModel.swift */; };
@@ -106,6 +109,9 @@
 		02C319942BCE17620030D506 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		02CCB3112C17FA4F005BACB8 /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
 		02CCB3142C1805CB005BACB8 /* KakaoLoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoLoginButton.swift; sourceTree = "<group>"; };
+		02CCB31C2C1961FE005BACB8 /* FirstUserInfoPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstUserInfoPage.swift; sourceTree = "<group>"; };
+		02CCB31E2C1963BD005BACB8 /* ProfileImageSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageSelectView.swift; sourceTree = "<group>"; };
+		02CCB3202C1AA882005BACB8 /* SecondUserInfoPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondUserInfoPage.swift; sourceTree = "<group>"; };
 		02E4F4472C105748007CCD2E /* MarketItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketItemView.swift; sourceTree = "<group>"; };
 		02E4F4492C1057D5007CCD2E /* MarketItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketItem.swift; sourceTree = "<group>"; };
 		02E4F44B2C10598D007CCD2E /* MarketItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketItemViewModel.swift; sourceTree = "<group>"; };
@@ -196,6 +202,8 @@
 				02E4F44F2C119452007CCD2E /* MarketUploadView.swift */,
 				02E4F45B2C11A86E007CCD2E /* MarketDetailView.swift */,
 				0246996C2C12C25100CB9C1A /* ChattingView.swift */,
+				02CCB31C2C1961FE005BACB8 /* FirstUserInfoPage.swift */,
+				02CCB3202C1AA882005BACB8 /* SecondUserInfoPage.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -296,6 +304,14 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		02CCB31B2C1961BC005BACB8 /* UserInfo */ = {
+			isa = PBXGroup;
+			children = (
+				02CCB31E2C1963BD005BACB8 /* ProfileImageSelectView.swift */,
+			);
+			path = UserInfo;
+			sourceTree = "<group>";
+		};
 		02E4F4462C105737007CCD2E /* Market */ = {
 			isa = PBXGroup;
 			children = (
@@ -315,6 +331,7 @@
 		02FFDD0F2BE4990E002F0DEF /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				02CCB31B2C1961BC005BACB8 /* UserInfo */,
 				02CCB3132C1805BD005BACB8 /* Login */,
 				024699732C1346CB00CB9C1A /* Chatting */,
 				02E4F4462C105737007CCD2E /* Market */,
@@ -471,6 +488,7 @@
 				02E4F45A2C119EB3007CCD2E /* MarketUploadButton.swift in Sources */,
 				02B729832C0F0FB300C389FD /* MyPageView.swift in Sources */,
 				02A2FDF12C09827A005B0B22 /* ImageSelectView.swift in Sources */,
+				02CCB3212C1AA882005BACB8 /* SecondUserInfoPage.swift in Sources */,
 				02E4F4622C12BF27007CCD2E /* ChatButton.swift in Sources */,
 				02094CC92BECA93B0098995E /* PersonalPageWork.swift in Sources */,
 				02E4F44E2C105A0A007CCD2E /* MarketItemsGridView.swift in Sources */,
@@ -500,11 +518,13 @@
 				02B729742C0DB4F600C389FD /* CustomMultiLineTextField.swift in Sources */,
 				02E4F4522C11960F007CCD2E /* ProductFeedInfoView.swift in Sources */,
 				02FFDD082BE41420002F0DEF /* ArtWorkItemView.swift in Sources */,
+				02CCB31D2C1961FE005BACB8 /* FirstUserInfoPage.swift in Sources */,
 				02B729782C0DD1BC00C389FD /* CategoryView.swift in Sources */,
 				0246996F2C12EE2100CB9C1A /* customBackbutton.swift in Sources */,
 				02E4F45E2C11A8F7007CCD2E /* ProductInfoView.swift in Sources */,
 				020118062BFF13C300C13256 /* CateLabelView.swift in Sources */,
 				020118082BFF16ED00C13256 /* ReactionView.swift in Sources */,
+				02CCB31F2C1963BD005BACB8 /* ProfileImageSelectView.swift in Sources */,
 				02CCB3122C17FA4F005BACB8 /* LoginPage.swift in Sources */,
 				0246996D2C12C25100CB9C1A /* ChattingView.swift in Sources */,
 				02E4F44C2C10598D007CCD2E /* MarketItemViewModel.swift in Sources */,
